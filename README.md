@@ -1,0 +1,1 @@
+# DNSSEC_NIC_M-xico_MA2005B.201
