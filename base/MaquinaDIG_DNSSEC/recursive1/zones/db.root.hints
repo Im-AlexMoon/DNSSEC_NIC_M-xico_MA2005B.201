@@ -1,0 +1,3 @@
+. 86400 IN NS ns.root.
+
+ns.root. 86400 IN A 172.30.0.10

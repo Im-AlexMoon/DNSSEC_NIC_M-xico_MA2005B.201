@@ -1,0 +1,81 @@
+zona,estado_cadena,nombre,tipo,ttl_observado,ttl_esperado,ttl_ok,rrsig_tag,rrsig_uso,rrsig_alg,rrsig_firmante,rrsig_inicio,rrsig_fin,rrsig_vigencia,rrsig_dias_restantes,rrsig_ttl_original,rrsig_cripto
+.,SECURE,.,SOA,86400,86400,True,3216,ZSK,ECDSAP256SHA256,.,2026-10-21 03:21:58Z,2026-11-20 03:21:58Z,vigente,30.0,86400,True
+.,SECURE,.,NS,86400,86400,True,3216,ZSK,ECDSAP256SHA256,.,2026-10-21 03:21:58Z,2026-11-20 03:21:58Z,vigente,30.0,86400,True
+.,SECURE,.,DNSKEY,86400,86400,True,3216,ZSK,ECDSAP256SHA256,.,2026-10-21 03:21:58Z,2026-11-20 03:21:58Z,vigente,30.0,86400,True
+.,SECURE,.,DNSKEY,86400,86400,True,26207,KSK,ECDSAP256SHA256,.,2026-10-21 03:21:58Z,2026-11-20 03:21:58Z,vigente,30.0,86400,True
+.,SECURE,ns.root.,A,86400,86400,True,3216,ZSK,ECDSAP256SHA256,.,2026-10-21 03:21:58Z,2026-11-20 03:21:58Z,vigente,30.0,86400,True
+unsigned.,INSECURE,unsigned.,SOA,86400,86400,True,,,,,,,,,,
+unsigned.,INSECURE,unsigned.,NS,86400,86400,True,,,,,,,,,,
+unsigned.,INSECURE,ns.unsigned.,A,86400,86400,True,,,,,,,,,,
+signed.,SECURE,signed.,SOA,86400,86400,True,55960,ZSK,ECDSAP256SHA256,signed.,2026-10-21 03:21:57Z,2026-11-20 03:21:57Z,vigente,30.0,86400,True
+signed.,SECURE,signed.,NS,86400,86400,True,55960,ZSK,ECDSAP256SHA256,signed.,2026-10-21 03:21:57Z,2026-11-20 03:21:57Z,vigente,30.0,86400,True
+signed.,SECURE,signed.,DNSKEY,86400,86400,True,34708,KSK,ECDSAP256SHA256,signed.,2026-10-21 03:21:57Z,2026-11-20 03:21:57Z,vigente,30.0,86400,True
+signed.,SECURE,signed.,DNSKEY,86400,86400,True,55960,ZSK,ECDSAP256SHA256,signed.,2026-10-21 03:21:57Z,2026-11-20 03:21:57Z,vigente,30.0,86400,True
+signed.,SECURE,ns.signed.,A,86400,86400,True,55960,ZSK,ECDSAP256SHA256,signed.,2026-10-21 03:21:57Z,2026-11-20 03:21:57Z,vigente,30.0,86400,True
+test.,SECURE,test.,SOA,86400,86400,True,40629,ZSK,ECDSAP384SHA384,test.,2026-10-21 03:21:58Z,2026-11-20 03:21:58Z,vigente,30.0,86400,True
+test.,SECURE,test.,NS,86400,86400,True,40629,ZSK,ECDSAP384SHA384,test.,2026-10-21 03:21:58Z,2026-11-20 03:21:58Z,vigente,30.0,86400,True
+test.,SECURE,test.,DNSKEY,86400,86400,True,30542,KSK,ECDSAP384SHA384,test.,2026-10-21 03:21:58Z,2026-11-20 03:21:58Z,vigente,30.0,86400,True
+test.,SECURE,test.,DNSKEY,86400,86400,True,40629,ZSK,ECDSAP384SHA384,test.,2026-10-21 03:21:58Z,2026-11-20 03:21:58Z,vigente,30.0,86400,True
+test.,SECURE,ns.test.,A,86400,86400,True,40629,ZSK,ECDSAP384SHA384,test.,2026-10-21 03:21:58Z,2026-11-20 03:21:58Z,vigente,30.0,86400,True
+test.,SECURE,test.,NSEC3PARAM,0,0,True,40629,ZSK,ECDSAP384SHA384,test.,2026-10-21 03:21:58Z,2026-11-20 03:21:58Z,vigente,30.0,0,True
+zeta.signed.,INSECURE,zeta.signed.,SOA,86400,86400,True,,,,,,,,,,
+zeta.signed.,INSECURE,zeta.signed.,NS,86400,86400,True,,,,,,,,,,
+zeta.signed.,INSECURE,ns.zeta.signed.,A,86400,86400,True,,,,,,,,,,
+zeta.signed.,INSECURE,www.zeta.signed.,A,86400,86400,True,,,,,,,,,,
+eta.unsigned.,INSECURE,eta.unsigned.,SOA,86400,86400,True,,,,,,,,,,
+eta.unsigned.,INSECURE,eta.unsigned.,NS,86400,86400,True,,,,,,,,,,
+eta.unsigned.,INSECURE,ns.eta.unsigned.,A,86400,86400,True,,,,,,,,,,
+eta.unsigned.,INSECURE,www.eta.unsigned.,A,86400,86400,True,,,,,,,,,,
+theta.unsigned.,INSECURE,theta.unsigned.,SOA,86400,86400,True,,,,,,,,,,
+theta.unsigned.,INSECURE,theta.unsigned.,NS,86400,86400,True,,,,,,,,,,
+theta.unsigned.,INSECURE,ns.theta.unsigned.,A,86400,86400,True,,,,,,,,,,
+theta.unsigned.,INSECURE,www.theta.unsigned.,A,86400,86400,True,,,,,,,,,,
+iota.unsigned.,INSECURE,iota.unsigned.,SOA,86400,86400,True,,,,,,,,,,
+iota.unsigned.,INSECURE,iota.unsigned.,NS,86400,86400,True,,,,,,,,,,
+iota.unsigned.,INSECURE,ns.iota.unsigned.,A,86400,86400,True,,,,,,,,,,
+iota.unsigned.,INSECURE,www.iota.unsigned.,A,86400,86400,True,,,,,,,,,,
+caducada.test.,BOGUS,caducada.test.,SOA,86400,86400,True,34578,ZSK,ECDSAP256SHA256,caducada.test.,2026-09-11 04:21:55Z,2026-10-11 04:21:55Z,expirada,-10.0,86400,True
+caducada.test.,BOGUS,caducada.test.,NS,86400,86400,True,34578,ZSK,ECDSAP256SHA256,caducada.test.,2026-09-11 04:21:55Z,2026-10-11 04:21:55Z,expirada,-10.0,86400,True
+caducada.test.,BOGUS,caducada.test.,DNSKEY,86400,86400,True,6549,KSK,ECDSAP256SHA256,caducada.test.,2026-09-11 04:21:55Z,2026-10-11 04:21:55Z,expirada,-10.0,86400,True
+caducada.test.,BOGUS,caducada.test.,DNSKEY,86400,86400,True,34578,ZSK,ECDSAP256SHA256,caducada.test.,2026-09-11 04:21:55Z,2026-10-11 04:21:55Z,expirada,-10.0,86400,True
+caducada.test.,BOGUS,ns.caducada.test.,A,86400,86400,True,34578,ZSK,ECDSAP256SHA256,caducada.test.,2026-09-11 04:21:55Z,2026-10-11 04:21:55Z,expirada,-10.0,86400,True
+caducada.test.,BOGUS,www.caducada.test.,A,86400,86400,True,34578,ZSK,ECDSAP256SHA256,caducada.test.,2026-09-11 04:21:55Z,2026-10-11 04:21:55Z,expirada,-10.0,86400,True
+sinds.test.,INSECURE,sinds.test.,SOA,86400,86400,True,22778,ZSK,ECDSAP256SHA256,sinds.test.,2026-10-21 03:21:56Z,2026-11-20 03:21:56Z,vigente,30.0,86400,True
+sinds.test.,INSECURE,sinds.test.,NS,86400,86400,True,22778,ZSK,ECDSAP256SHA256,sinds.test.,2026-10-21 03:21:56Z,2026-11-20 03:21:56Z,vigente,30.0,86400,True
+sinds.test.,INSECURE,sinds.test.,DNSKEY,86400,86400,True,9502,KSK,ECDSAP256SHA256,sinds.test.,2026-10-21 03:21:56Z,2026-11-20 03:21:56Z,vigente,30.0,86400,True
+sinds.test.,INSECURE,sinds.test.,DNSKEY,86400,86400,True,22778,ZSK,ECDSAP256SHA256,sinds.test.,2026-10-21 03:21:56Z,2026-11-20 03:21:56Z,vigente,30.0,86400,True
+sinds.test.,INSECURE,ns.sinds.test.,A,86400,86400,True,22778,ZSK,ECDSAP256SHA256,sinds.test.,2026-10-21 03:21:56Z,2026-11-20 03:21:56Z,vigente,30.0,86400,True
+sinds.test.,INSECURE,www.sinds.test.,A,86400,86400,True,22778,ZSK,ECDSAP256SHA256,sinds.test.,2026-10-21 03:21:56Z,2026-11-20 03:21:56Z,vigente,30.0,86400,True
+algdebil.test.,SECURE,algdebil.test.,SOA,86400,86400,True,58830,ZSK,RSASHA1,algdebil.test.,2026-10-21 03:21:57Z,2026-11-20 03:21:57Z,vigente,30.0,86400,True
+algdebil.test.,SECURE,algdebil.test.,NS,86400,86400,True,58830,ZSK,RSASHA1,algdebil.test.,2026-10-21 03:21:57Z,2026-11-20 03:21:57Z,vigente,30.0,86400,True
+algdebil.test.,SECURE,algdebil.test.,DNSKEY,86400,86400,True,9677,KSK,RSASHA1,algdebil.test.,2026-10-21 03:21:57Z,2026-11-20 03:21:57Z,vigente,30.0,86400,True
+algdebil.test.,SECURE,algdebil.test.,DNSKEY,86400,86400,True,58830,ZSK,RSASHA1,algdebil.test.,2026-10-21 03:21:57Z,2026-11-20 03:21:57Z,vigente,30.0,86400,True
+algdebil.test.,SECURE,ns.algdebil.test.,A,86400,86400,True,58830,ZSK,RSASHA1,algdebil.test.,2026-10-21 03:21:57Z,2026-11-20 03:21:57Z,vigente,30.0,86400,True
+algdebil.test.,SECURE,www.algdebil.test.,A,86400,86400,True,58830,ZSK,RSASHA1,algdebil.test.,2026-10-21 03:21:57Z,2026-11-20 03:21:57Z,vigente,30.0,86400,True
+alpha.unsigned.,INSECURE,alpha.unsigned.,SOA,86400,86400,True,,,,,,,,,,
+alpha.unsigned.,INSECURE,alpha.unsigned.,NS,86400,86400,True,,,,,,,,,,
+alpha.unsigned.,INSECURE,ns.alpha.unsigned.,A,86400,86400,True,,,,,,,,,,
+alpha.unsigned.,INSECURE,www.alpha.unsigned.,A,86400,86400,True,,,,,,,,,,
+beta.signed.,SECURE,beta.signed.,SOA,86400,86400,True,40028,ZSK,ECDSAP256SHA256,beta.signed.,2026-10-21 03:21:53Z,2026-11-20 03:21:53Z,vigente,30.0,86400,True
+beta.signed.,SECURE,beta.signed.,NS,86400,86400,True,40028,ZSK,ECDSAP256SHA256,beta.signed.,2026-10-21 03:21:53Z,2026-11-20 03:21:53Z,vigente,30.0,86400,True
+beta.signed.,SECURE,beta.signed.,DNSKEY,86400,86400,True,26439,KSK,ECDSAP256SHA256,beta.signed.,2026-10-21 03:21:53Z,2026-11-20 03:21:53Z,vigente,30.0,86400,True
+beta.signed.,SECURE,beta.signed.,DNSKEY,86400,86400,True,40028,ZSK,ECDSAP256SHA256,beta.signed.,2026-10-21 03:21:53Z,2026-11-20 03:21:53Z,vigente,30.0,86400,True
+beta.signed.,SECURE,ns.beta.signed.,A,86400,86400,True,40028,ZSK,ECDSAP256SHA256,beta.signed.,2026-10-21 03:21:53Z,2026-11-20 03:21:53Z,vigente,30.0,86400,True
+beta.signed.,SECURE,www.beta.signed.,A,86400,86400,True,40028,ZSK,ECDSAP256SHA256,beta.signed.,2026-10-21 03:21:53Z,2026-11-20 03:21:53Z,vigente,30.0,86400,True
+gamma.signed.,INSECURE,gamma.signed.,SOA,86400,86400,True,,,,,,,,,,
+gamma.signed.,INSECURE,gamma.signed.,NS,86400,86400,True,,,,,,,,,,
+gamma.signed.,INSECURE,ns.gamma.signed.,A,86400,86400,True,,,,,,,,,,
+gamma.signed.,INSECURE,www.gamma.signed.,A,86400,86400,True,,,,,,,,,,
+delta.signed.,SECURE,delta.signed.,SOA,86400,86400,True,10893,ZSK,RSASHA256,delta.signed.,2026-10-21 03:21:54Z,2026-11-20 03:21:54Z,vigente,30.0,86400,True
+delta.signed.,SECURE,delta.signed.,NS,86400,86400,True,10893,ZSK,RSASHA256,delta.signed.,2026-10-21 03:21:54Z,2026-11-20 03:21:54Z,vigente,30.0,86400,True
+delta.signed.,SECURE,delta.signed.,DNSKEY,86400,86400,True,10893,ZSK,RSASHA256,delta.signed.,2026-10-21 03:21:54Z,2026-11-20 03:21:54Z,vigente,30.0,86400,True
+delta.signed.,SECURE,delta.signed.,DNSKEY,86400,86400,True,32411,KSK,RSASHA256,delta.signed.,2026-10-21 03:21:54Z,2026-11-20 03:21:54Z,vigente,30.0,86400,True
+delta.signed.,SECURE,ns.delta.signed.,A,86400,86400,True,10893,ZSK,RSASHA256,delta.signed.,2026-10-21 03:21:54Z,2026-11-20 03:21:54Z,vigente,30.0,86400,True
+delta.signed.,SECURE,www.delta.signed.,A,86400,86400,True,10893,ZSK,RSASHA256,delta.signed.,2026-10-21 03:21:54Z,2026-11-20 03:21:54Z,vigente,30.0,86400,True
+delta.signed.,SECURE,delta.signed.,NSEC3PARAM,0,0,True,10893,ZSK,RSASHA256,delta.signed.,2026-10-21 03:21:54Z,2026-11-20 03:21:54Z,vigente,30.0,0,True
+epsilon.signed.,SECURE,epsilon.signed.,SOA,86400,86400,True,39454,ZSK,ED25519,epsilon.signed.,2026-10-21 03:21:55Z,2026-11-20 03:21:55Z,vigente,30.0,86400,True
+epsilon.signed.,SECURE,epsilon.signed.,NS,86400,86400,True,39454,ZSK,ED25519,epsilon.signed.,2026-10-21 03:21:55Z,2026-11-20 03:21:55Z,vigente,30.0,86400,True
+epsilon.signed.,SECURE,epsilon.signed.,DNSKEY,86400,86400,True,38700,KSK,ED25519,epsilon.signed.,2026-10-21 03:21:55Z,2026-11-20 03:21:55Z,vigente,30.0,86400,True
+epsilon.signed.,SECURE,epsilon.signed.,DNSKEY,86400,86400,True,39454,ZSK,ED25519,epsilon.signed.,2026-10-21 03:21:55Z,2026-11-20 03:21:55Z,vigente,30.0,86400,True
+epsilon.signed.,SECURE,ns.epsilon.signed.,A,86400,86400,True,39454,ZSK,ED25519,epsilon.signed.,2026-10-21 03:21:55Z,2026-11-20 03:21:55Z,vigente,30.0,86400,True
+epsilon.signed.,SECURE,www.epsilon.signed.,A,86400,86400,True,39454,ZSK,ED25519,epsilon.signed.,2026-10-21 03:21:55Z,2026-11-20 03:21:55Z,vigente,30.0,86400,True

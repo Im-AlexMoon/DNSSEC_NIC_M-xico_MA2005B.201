@@ -1,0 +1,11 @@
+$TTL 86400
+@ IN SOA ns.alpha.unsigned. admin.alpha.unsigned. (
+    2026100601  ; serial (AAAAMMDDnn)
+    3600        ; refresh
+    900         ; retry
+    604800      ; expire
+    86400 )     ; negative TTL
+
+@        IN NS ns.alpha.unsigned.
+ns       IN A  172.30.0.30
+www      IN A  172.30.0.35   ; la IP que quieras para el sitio

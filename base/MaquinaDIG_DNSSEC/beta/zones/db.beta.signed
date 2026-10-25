@@ -1,0 +1,10 @@
+$TTL 86400
+@ IN SOA ns.beta.signed. admin.beta.signed. (
+    2026101301
+    3600
+    900
+    604800
+    86400 )
+@   IN NS ns.beta.signed.
+ns  IN A  172.30.0.50
+www IN A  172.30.0.51

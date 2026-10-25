@@ -1,0 +1,34 @@
+digraph dnssec {
+  rankdir=TB; node [shape=box, style=filled, fontname=Helvetica];
+  "." [fillcolor=palegreen, label=".\nSECURE\nECDSAP256SHA256 NSEC"];
+  "unsigned." [fillcolor=khaki, label="unsigned.\nINSECURE\n ninguno"];
+  "signed." [fillcolor=palegreen, label="signed.\nSECURE\nECDSAP256SHA256 NSEC"];
+  "test." [fillcolor=palegreen, label="test.\nSECURE\nECDSAP384SHA384 NSEC3"];
+  "zeta.signed." [fillcolor=khaki, label="zeta.signed.\nINSECURE\n ninguno"];
+  "eta.unsigned." [fillcolor=khaki, label="eta.unsigned.\nINSECURE\n ninguno"];
+  "theta.unsigned." [fillcolor=khaki, label="theta.unsigned.\nINSECURE\n ninguno"];
+  "iota.unsigned." [fillcolor=khaki, label="iota.unsigned.\nINSECURE\n ninguno"];
+  "caducada.test." [fillcolor=lightcoral, label="caducada.test.\nBOGUS\nECDSAP256SHA256 NSEC"];
+  "sinds.test." [fillcolor=khaki, label="sinds.test.\nINSECURE\nECDSAP256SHA256 NSEC"];
+  "algdebil.test." [fillcolor=palegreen, label="algdebil.test.\nSECURE\nRSASHA1 NSEC"];
+  "alpha.unsigned." [fillcolor=khaki, label="alpha.unsigned.\nINSECURE\n ninguno"];
+  "beta.signed." [fillcolor=palegreen, label="beta.signed.\nSECURE\nECDSAP256SHA256 NSEC"];
+  "gamma.signed." [fillcolor=khaki, label="gamma.signed.\nINSECURE\n ninguno"];
+  "delta.signed." [fillcolor=palegreen, label="delta.signed.\nSECURE\nRSASHA256 NSEC3"];
+  "epsilon.signed." [fillcolor=palegreen, label="epsilon.signed.\nSECURE\nED25519 NSEC"];
+  "." -> "unsigned." [label="sin DS", style=dashed, color=gray50];
+  "." -> "signed." [label="DS 34708", color=darkgreen];
+  "." -> "test." [label="DS 30542", color=darkgreen];
+  "signed." -> "zeta.signed." [label="sin DS", style=dashed, color=gray50];
+  "unsigned." -> "eta.unsigned." [label="sin DS", style=dashed, color=gray50];
+  "unsigned." -> "theta.unsigned." [label="sin DS", style=dashed, color=gray50];
+  "unsigned." -> "iota.unsigned." [label="sin DS", style=dashed, color=gray50];
+  "test." -> "caducada.test." [label="DS 6549", color=darkgreen];
+  "test." -> "sinds.test." [label="sin DS", style=dashed, color=orange];
+  "test." -> "algdebil.test." [label="DS 9677", color=darkgreen];
+  "unsigned." -> "alpha.unsigned." [label="sin DS", style=dashed, color=gray50];
+  "signed." -> "beta.signed." [label="DS 26439", color=darkgreen];
+  "signed." -> "gamma.signed." [label="sin DS", style=dashed, color=gray50];
+  "signed." -> "delta.signed." [label="DS 32411", color=darkgreen];
+  "signed." -> "epsilon.signed." [label="DS 38700", color=darkgreen];
+}

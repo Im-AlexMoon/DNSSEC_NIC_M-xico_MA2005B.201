@@ -1,0 +1,63 @@
+# --- Llaves DNSSEC (se regeneran con genera_arbol.py; nunca se publican) ---
+K*.private
+K*.key
+*.private
+
+# --- Material generado por BIND / dnssec-signzone ---
+# Zonas firmadas (salida = fuente + ".signed"). OJO: no usar "*.signed" a secas,
+# porque ignoraría las zonas fuente db.signed, db.beta.signed, etc.
+*.signed.signed
+*.signed.signed.jnl
+db.root.signed
+db.test.signed
+db.unsigned.signed
+db.*.test.signed
+db.*.unsigned.signed
+dsset-*
+keyset-*
+*.jnl
+named.run
+named.pid
+rndc.key
+managed-keys.bind*
+*.nzf
+*.nzd
+
+# --- Árboles generados por el laboratorio ---
+MaquinaDIG_v3/
+MaquinaDIG_*/keys/
+lab-dns.sh.bak
+
+# --- Capturas de red, logs y material ajeno al proyecto ---
+*.pcap
+*.pcapng
+*.cap
+Captures_*.tar.gz
+logs/
+rockyou*
+*.zip
+ejercicio_aircrack/
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+
+# --- LaTeX ---
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+
+# --- Sistema / editor ---
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/

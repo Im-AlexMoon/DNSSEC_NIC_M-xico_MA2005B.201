@@ -1,0 +1,1312 @@
+##### dig @172.30.0.100 . SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 . SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 34424
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 398c74084a6bb687010000006ad83fa982d14476e83f2bc1 (good)
+;; QUESTION SECTION:
+;.				IN	SOA
+
+;; ANSWER SECTION:
+.			86400	IN	SOA	ns.root. admin.root. 2026081602 3600 900 604800 86400
+.			86400	IN	RRSIG	SOA 13 0 86400 20261120032158 20261021032158 3216 . H8rZg+GvYiCCeEUYY6LbDxidFztPqBXbpMynoyEf2ZAbiq9VR0ikwhmF aRrUNp7zAA1hjT1jq9/pbdtBxqs1Tw==
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:29 CST 2026
+;; MSG SIZE  rcvd: 198
+
+##### dig @172.30.0.101 . SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 . SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 30412
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: c41f9cd9a39f6224010000006ad83fa9cd217abf109600e9 (good)
+;; QUESTION SECTION:
+;.				IN	SOA
+
+;; ANSWER SECTION:
+.			86400	IN	SOA	ns.root. admin.root. 2026081602 3600 900 604800 86400
+.			86400	IN	RRSIG	SOA 13 0 86400 20261120032158 20261021032158 3216 . H8rZg+GvYiCCeEUYY6LbDxidFztPqBXbpMynoyEf2ZAbiq9VR0ikwhmF aRrUNp7zAA1hjT1jq9/pbdtBxqs1Tw==
+
+;; Query time: 7 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:29 CST 2026
+;; MSG SIZE  rcvd: 198
+
+##### dig @172.30.0.100 unsigned SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 unsigned SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3706
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: e37214fb6b76adee010000006ad83fa9c8641af08bc8a21a (good)
+;; QUESTION SECTION:
+;unsigned.			IN	SOA
+
+;; ANSWER SECTION:
+unsigned.		86400	IN	SOA	ns.unsigned. admin.unsigned. 2026082001 3600 900 604800 86400
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:29 CST 2026
+;; MSG SIZE  rcvd: 110
+
+##### dig @172.30.0.101 unsigned SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 unsigned SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 38495
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 897084c9dd146a00010000006ad83fa98e2853c38a00ec16 (good)
+;; QUESTION SECTION:
+;unsigned.			IN	SOA
+
+;; ANSWER SECTION:
+unsigned.		86400	IN	SOA	ns.unsigned. admin.unsigned. 2026082001 3600 900 604800 86400
+
+;; Query time: 11 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:29 CST 2026
+;; MSG SIZE  rcvd: 110
+
+##### dig @172.30.0.100 signed SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 signed SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 16095
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 4c1b0c8f779c212a010000006ad83fa9e175ef0545e7abfc (good)
+;; QUESTION SECTION:
+;signed.				IN	SOA
+
+;; ANSWER SECTION:
+signed.			86400	IN	SOA	ns.signed. admin.signed. 2026101302 3600 900 604800 86400
+signed.			86400	IN	RRSIG	SOA 13 1 86400 20261120032157 20261021032157 55960 signed. bkIltoo888xhaWfObYCJ/f6VXr+nZ3fLZ3Y5yKpRqMiw+ezoR6kSxhHu izfShqJUtsIOAt7CLPzOKrGOSTq8wg==
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:29 CST 2026
+;; MSG SIZE  rcvd: 210
+
+##### dig @172.30.0.101 signed SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 signed SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 63776
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 9850341dc546fd57010000006ad83faa90469f4494571dce (good)
+;; QUESTION SECTION:
+;signed.				IN	SOA
+
+;; ANSWER SECTION:
+signed.			86400	IN	SOA	ns.signed. admin.signed. 2026101302 3600 900 604800 86400
+signed.			86400	IN	RRSIG	SOA 13 1 86400 20261120032157 20261021032157 55960 signed. bkIltoo888xhaWfObYCJ/f6VXr+nZ3fLZ3Y5yKpRqMiw+ezoR6kSxhHu izfShqJUtsIOAt7CLPzOKrGOSTq8wg==
+
+;; Query time: 7 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:30 CST 2026
+;; MSG SIZE  rcvd: 210
+
+##### dig @172.30.0.100 test SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 test SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 41836
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 3318f8955a45cf89010000006ad83faa6bb99296c7775914 (good)
+;; QUESTION SECTION:
+;test.				IN	SOA
+
+;; ANSWER SECTION:
+test.			86400	IN	SOA	ns.test. admin.test. 2026102002 3600 900 604800 86400
+test.			86400	IN	RRSIG	SOA 14 1 86400 20261120032158 20261021032158 40629 test. hnPhfklFft0QJ1CzGBgAqjXcaYIIHyakrQ2F6orPtPhSkdGIHz9CuF1x uMSdx60htF1wjiW4m8ePKs/kcaISiuI9e8lIMaWvKWGEKBLlUnNIgmAh BqL9vs2Z1ATfWjzi
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:30 CST 2026
+;; MSG SIZE  rcvd: 238
+
+##### dig @172.30.0.101 test SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 test SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 43728
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 19970127d7cc23dc010000006ad83faaf7ad3a9736f0dc75 (good)
+;; QUESTION SECTION:
+;test.				IN	SOA
+
+;; ANSWER SECTION:
+test.			86400	IN	SOA	ns.test. admin.test. 2026102002 3600 900 604800 86400
+test.			86400	IN	RRSIG	SOA 14 1 86400 20261120032158 20261021032158 40629 test. hnPhfklFft0QJ1CzGBgAqjXcaYIIHyakrQ2F6orPtPhSkdGIHz9CuF1x uMSdx60htF1wjiW4m8ePKs/kcaISiuI9e8lIMaWvKWGEKBLlUnNIgmAh BqL9vs2Z1ATfWjzi
+
+;; Query time: 7 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:30 CST 2026
+;; MSG SIZE  rcvd: 238
+
+##### dig @172.30.0.100 alpha.unsigned SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 alpha.unsigned SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 53364
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: b1dc92d19c92df60010000006ad83faa3f46b177b9cbd860 (good)
+;; QUESTION SECTION:
+;alpha.unsigned.			IN	SOA
+
+;; ANSWER SECTION:
+alpha.unsigned.		86400	IN	SOA	ns.alpha.unsigned. admin.alpha.unsigned. 2026100601 3600 900 604800 86400
+
+;; Query time: 7 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:30 CST 2026
+;; MSG SIZE  rcvd: 116
+
+##### dig @172.30.0.101 alpha.unsigned SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 alpha.unsigned SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 47123
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 394985a277138e1b010000006ad83faa71eac9706b1c1399 (good)
+;; QUESTION SECTION:
+;alpha.unsigned.			IN	SOA
+
+;; ANSWER SECTION:
+alpha.unsigned.		86400	IN	SOA	ns.alpha.unsigned. admin.alpha.unsigned. 2026100601 3600 900 604800 86400
+
+;; Query time: 7 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:30 CST 2026
+;; MSG SIZE  rcvd: 116
+
+##### dig @172.30.0.100 www.alpha.unsigned A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 www.alpha.unsigned A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 39717
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: c4db6b628ed43dff010000006ad83faa44697e57bc2fbea5 (good)
+;; QUESTION SECTION:
+;www.alpha.unsigned.		IN	A
+
+;; ANSWER SECTION:
+www.alpha.unsigned.	86400	IN	A	172.30.0.35
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:30 CST 2026
+;; MSG SIZE  rcvd: 91
+
+##### dig @172.30.0.101 www.alpha.unsigned A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 www.alpha.unsigned A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 53877
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: d55b1f2ae36c56f7010000006ad83faa0faf75e24ce32aa3 (good)
+;; QUESTION SECTION:
+;www.alpha.unsigned.		IN	A
+
+;; ANSWER SECTION:
+www.alpha.unsigned.	86400	IN	A	172.30.0.35
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:30 CST 2026
+;; MSG SIZE  rcvd: 91
+
+##### dig @172.30.0.100 beta.signed SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 beta.signed SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 37866
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: a20e9b0cdad70daa010000006ad83faa48cfa7e421148b7b (good)
+;; QUESTION SECTION:
+;beta.signed.			IN	SOA
+
+;; ANSWER SECTION:
+beta.signed.		86400	IN	SOA	ns.beta.signed. admin.beta.signed. 2026101302 3600 900 604800 86400
+beta.signed.		86400	IN	RRSIG	SOA 13 2 86400 20261120032153 20261021032153 40028 beta.signed. sSF9UWZa2mfBiDRB25h5g4mva+27zOZhMHsYjLP142nTsKbzgGpit7LR piXkWthwdqSawBZW61YF5psbhG2dOg==
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:30 CST 2026
+;; MSG SIZE  rcvd: 220
+
+##### dig @172.30.0.101 beta.signed SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 beta.signed SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 42819
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: e6c84d2843d390b9010000006ad83faa370600f1244ce948 (good)
+;; QUESTION SECTION:
+;beta.signed.			IN	SOA
+
+;; ANSWER SECTION:
+beta.signed.		86400	IN	SOA	ns.beta.signed. admin.beta.signed. 2026101302 3600 900 604800 86400
+beta.signed.		86400	IN	RRSIG	SOA 13 2 86400 20261120032153 20261021032153 40028 beta.signed. sSF9UWZa2mfBiDRB25h5g4mva+27zOZhMHsYjLP142nTsKbzgGpit7LR piXkWthwdqSawBZW61YF5psbhG2dOg==
+
+;; Query time: 11 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:30 CST 2026
+;; MSG SIZE  rcvd: 220
+
+##### dig @172.30.0.100 www.beta.signed A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 www.beta.signed A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 13316
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 9047f97f66b5346b010000006ad83faa06f2e05210f00f85 (good)
+;; QUESTION SECTION:
+;www.beta.signed.		IN	A
+
+;; ANSWER SECTION:
+www.beta.signed.	86400	IN	A	172.30.0.51
+www.beta.signed.	86400	IN	RRSIG	A 13 3 86400 20261120032153 20261021032153 40028 beta.signed. konNCrSx/CZF4A22g07gb71KHTwsOR7FePuIyejbyohK4ShHqVpQR0XT 9C/sgg1Rd9FFKf6ywJDzSBI47/L8/A==
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:30 CST 2026
+;; MSG SIZE  rcvd: 195
+
+##### dig @172.30.0.101 www.beta.signed A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 www.beta.signed A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 15400
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 99564545aa86c832010000006ad83faa04c3b9da13920861 (good)
+;; QUESTION SECTION:
+;www.beta.signed.		IN	A
+
+;; ANSWER SECTION:
+www.beta.signed.	86400	IN	A	172.30.0.51
+www.beta.signed.	86400	IN	RRSIG	A 13 3 86400 20261120032153 20261021032153 40028 beta.signed. konNCrSx/CZF4A22g07gb71KHTwsOR7FePuIyejbyohK4ShHqVpQR0XT 9C/sgg1Rd9FFKf6ywJDzSBI47/L8/A==
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:30 CST 2026
+;; MSG SIZE  rcvd: 195
+
+##### dig @172.30.0.100 gamma.signed SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 gamma.signed SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 13824
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 22228496ae976efa010000006ad83faa2279cb6827c97d33 (good)
+;; QUESTION SECTION:
+;gamma.signed.			IN	SOA
+
+;; ANSWER SECTION:
+gamma.signed.		86400	IN	SOA	ns.gamma.signed. admin.gamma.signed. 2026101301 3600 900 604800 86400
+
+;; Query time: 7 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:30 CST 2026
+;; MSG SIZE  rcvd: 114
+
+##### dig @172.30.0.101 gamma.signed SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 gamma.signed SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 19027
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 5f865217640067fe010000006ad83faa7893ba794670a6b5 (good)
+;; QUESTION SECTION:
+;gamma.signed.			IN	SOA
+
+;; ANSWER SECTION:
+gamma.signed.		86400	IN	SOA	ns.gamma.signed. admin.gamma.signed. 2026101301 3600 900 604800 86400
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:30 CST 2026
+;; MSG SIZE  rcvd: 114
+
+##### dig @172.30.0.100 www.gamma.signed A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 www.gamma.signed A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 57874
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 4d83869d97f1e706010000006ad83faa7b88c41cfc77e62c (good)
+;; QUESTION SECTION:
+;www.gamma.signed.		IN	A
+
+;; ANSWER SECTION:
+www.gamma.signed.	86400	IN	A	172.30.0.61
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:30 CST 2026
+;; MSG SIZE  rcvd: 89
+
+##### dig @172.30.0.101 www.gamma.signed A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 www.gamma.signed A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 56862
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 60c18826b8f8c0ca010000006ad83faa9dd323b2832c9020 (good)
+;; QUESTION SECTION:
+;www.gamma.signed.		IN	A
+
+;; ANSWER SECTION:
+www.gamma.signed.	86400	IN	A	172.30.0.61
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:30 CST 2026
+;; MSG SIZE  rcvd: 89
+
+##### dig @172.30.0.100 delta.signed SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 delta.signed SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 55578
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: aae4025146bf0c77010000006ad83faa3990f855b0a7345e (good)
+;; QUESTION SECTION:
+;delta.signed.			IN	SOA
+
+;; ANSWER SECTION:
+delta.signed.		86400	IN	SOA	ns.delta.signed. admin.delta.signed. 2026102002 3600 900 604800 86400
+delta.signed.		86400	IN	RRSIG	SOA 8 2 86400 20261120032154 20261021032154 10893 delta.signed. JhPBkooxqQRgXQYxa0lTKbDV2gOu0w9Pmb2rXhxr1bGDcb+X0D8Bgo/N QqFz1nXqLVdtsyXSX8dcvlGJ745wPgwPlU3nWw7nDnpvC/RNFw/8uuyI hoTKx3GJcobvFa1zq/bpoVyqjy7RbbQB9D2jEgwK9azUIoQ9Jr2LZlLs VK7LGce9zZv8Px1kYqFK2g6vd9IlZT3h4e9EfUgp04lPOT6UpuLtn4kb GECnlZePy2nlGFLORciaAJ7C4d77poJ1mo+pC+BM7WlS67M6nODZjooD Hh5iodaXGE3oIPK3KjgctYlP2XSdsx5rAQHaHezGo33K9ikVSN8nnpBV CwgfVA==
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:30 CST 2026
+;; MSG SIZE  rcvd: 414
+
+##### dig @172.30.0.101 delta.signed SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 delta.signed SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 56101
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: d2a6b5b5f5c33583010000006ad83faafb961fd2b48ad9b9 (good)
+;; QUESTION SECTION:
+;delta.signed.			IN	SOA
+
+;; ANSWER SECTION:
+delta.signed.		86400	IN	SOA	ns.delta.signed. admin.delta.signed. 2026102002 3600 900 604800 86400
+delta.signed.		86400	IN	RRSIG	SOA 8 2 86400 20261120032154 20261021032154 10893 delta.signed. JhPBkooxqQRgXQYxa0lTKbDV2gOu0w9Pmb2rXhxr1bGDcb+X0D8Bgo/N QqFz1nXqLVdtsyXSX8dcvlGJ745wPgwPlU3nWw7nDnpvC/RNFw/8uuyI hoTKx3GJcobvFa1zq/bpoVyqjy7RbbQB9D2jEgwK9azUIoQ9Jr2LZlLs VK7LGce9zZv8Px1kYqFK2g6vd9IlZT3h4e9EfUgp04lPOT6UpuLtn4kb GECnlZePy2nlGFLORciaAJ7C4d77poJ1mo+pC+BM7WlS67M6nODZjooD Hh5iodaXGE3oIPK3KjgctYlP2XSdsx5rAQHaHezGo33K9ikVSN8nnpBV CwgfVA==
+
+;; Query time: 7 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:30 CST 2026
+;; MSG SIZE  rcvd: 414
+
+##### dig @172.30.0.100 www.delta.signed A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 www.delta.signed A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 6775
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 64119ab1385d43cc010000006ad83fabbeb9415e55068936 (good)
+;; QUESTION SECTION:
+;www.delta.signed.		IN	A
+
+;; ANSWER SECTION:
+www.delta.signed.	86400	IN	A	172.30.0.81
+www.delta.signed.	86400	IN	RRSIG	A 8 3 86400 20261120032154 20261021032154 10893 delta.signed. UBoWfm/6cfFW/3BxPQsY+WSZCQ8VRIcJc8cgtJ3mFMtFz/MtQwMS23oI Edmp0GmGIIgG0rTxF856OyDkJR+1m1W099y/W7FNCPxCjm8i/C+wVdzs +lu4u8cubmy4f84M1wfph1FB0NyEnf2lb/OkNFrzuc+JygtzJ1LQFcwA k33n+N3OFntauNyYStz7X5l5t1R5ZyAaK/PKDSRv1KWiMO6L8s1ZAelr a6pOLLhk9y5f79jtYefN2/RBhShEeLsAozLlOmmhDYrSouhFGxpihseI UaXWOruKnFPGW8D3jFY/UBPWB6SkWvD1uWy3mP7C+PPM68WtwFj/ohBp iXzWLA==
+
+;; Query time: 0 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 389
+
+##### dig @172.30.0.101 www.delta.signed A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 www.delta.signed A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 39933
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 1468e7dd117ef8d7010000006ad83fab44445022758eea9c (good)
+;; QUESTION SECTION:
+;www.delta.signed.		IN	A
+
+;; ANSWER SECTION:
+www.delta.signed.	86400	IN	A	172.30.0.81
+www.delta.signed.	86400	IN	RRSIG	A 8 3 86400 20261120032154 20261021032154 10893 delta.signed. UBoWfm/6cfFW/3BxPQsY+WSZCQ8VRIcJc8cgtJ3mFMtFz/MtQwMS23oI Edmp0GmGIIgG0rTxF856OyDkJR+1m1W099y/W7FNCPxCjm8i/C+wVdzs +lu4u8cubmy4f84M1wfph1FB0NyEnf2lb/OkNFrzuc+JygtzJ1LQFcwA k33n+N3OFntauNyYStz7X5l5t1R5ZyAaK/PKDSRv1KWiMO6L8s1ZAelr a6pOLLhk9y5f79jtYefN2/RBhShEeLsAozLlOmmhDYrSouhFGxpihseI UaXWOruKnFPGW8D3jFY/UBPWB6SkWvD1uWy3mP7C+PPM68WtwFj/ohBp iXzWLA==
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 389
+
+##### dig @172.30.0.100 epsilon.signed SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 epsilon.signed SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 40184
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 8488db738c2740ea010000006ad83fab7c6bec7b6f0ce5f6 (good)
+;; QUESTION SECTION:
+;epsilon.signed.			IN	SOA
+
+;; ANSWER SECTION:
+epsilon.signed.		86400	IN	SOA	ns.epsilon.signed. admin.epsilon.signed. 2026102002 3600 900 604800 86400
+epsilon.signed.		86400	IN	RRSIG	SOA 15 2 86400 20261120032155 20261021032155 39454 epsilon.signed. dXI+llZPwVJ17NBrw2/zS+Y1mu+EIUzetMZaHtTmF3+shd3UuGwPLqcR ckFX+irNmyGdb7ys23ih5kk57EEvBw==
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 226
+
+##### dig @172.30.0.101 epsilon.signed SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 epsilon.signed SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 43758
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: d0edf0f557aa399a010000006ad83fab0510803e23b3bbe5 (good)
+;; QUESTION SECTION:
+;epsilon.signed.			IN	SOA
+
+;; ANSWER SECTION:
+epsilon.signed.		86400	IN	SOA	ns.epsilon.signed. admin.epsilon.signed. 2026102002 3600 900 604800 86400
+epsilon.signed.		86400	IN	RRSIG	SOA 15 2 86400 20261120032155 20261021032155 39454 epsilon.signed. dXI+llZPwVJ17NBrw2/zS+Y1mu+EIUzetMZaHtTmF3+shd3UuGwPLqcR ckFX+irNmyGdb7ys23ih5kk57EEvBw==
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 226
+
+##### dig @172.30.0.100 www.epsilon.signed A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 www.epsilon.signed A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 51347
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 08f2f491eee453a0010000006ad83faba3c27fc75c7b1a49 (good)
+;; QUESTION SECTION:
+;www.epsilon.signed.		IN	A
+
+;; ANSWER SECTION:
+www.epsilon.signed.	86400	IN	A	172.30.0.91
+www.epsilon.signed.	86400	IN	RRSIG	A 15 3 86400 20261120032155 20261021032155 39454 epsilon.signed. /2FxeV8pcf1xYfXI/5z40jeC3HFDdpS0UxgJajsj2s9RuZgELlzqiHXb Voha9HBGAYTWyaAXwhJFZa1Qi3C6Cg==
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 201
+
+##### dig @172.30.0.101 www.epsilon.signed A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 www.epsilon.signed A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 16443
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 6363982ed39ec00a010000006ad83fab64fc1d6b978cf94a (good)
+;; QUESTION SECTION:
+;www.epsilon.signed.		IN	A
+
+;; ANSWER SECTION:
+www.epsilon.signed.	86400	IN	A	172.30.0.91
+www.epsilon.signed.	86400	IN	RRSIG	A 15 3 86400 20261120032155 20261021032155 39454 epsilon.signed. /2FxeV8pcf1xYfXI/5z40jeC3HFDdpS0UxgJajsj2s9RuZgELlzqiHXb Voha9HBGAYTWyaAXwhJFZa1Qi3C6Cg==
+
+;; Query time: 7 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 201
+
+##### dig @172.30.0.100 zeta.signed SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 zeta.signed SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 4599
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 3f5bf155e6105486010000006ad83fabe7eecce87395ff2f (good)
+;; QUESTION SECTION:
+;zeta.signed.			IN	SOA
+
+;; ANSWER SECTION:
+zeta.signed.		86400	IN	SOA	ns.zeta.signed. admin.zeta.signed. 2026102001 3600 900 604800 86400
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 113
+
+##### dig @172.30.0.101 zeta.signed SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 zeta.signed SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 16055
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: accc3791eb9e908b010000006ad83fabe93629da327b74ac (good)
+;; QUESTION SECTION:
+;zeta.signed.			IN	SOA
+
+;; ANSWER SECTION:
+zeta.signed.		86400	IN	SOA	ns.zeta.signed. admin.zeta.signed. 2026102001 3600 900 604800 86400
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 113
+
+##### dig @172.30.0.100 www.zeta.signed A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 www.zeta.signed A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 63234
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: ae0620fc73f2d4e0010000006ad83fab6787cb0a409e20cd (good)
+;; QUESTION SECTION:
+;www.zeta.signed.		IN	A
+
+;; ANSWER SECTION:
+www.zeta.signed.	86400	IN	A	172.30.0.111
+
+;; Query time: 0 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 88
+
+##### dig @172.30.0.101 www.zeta.signed A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 www.zeta.signed A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 10083
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 2ce89ca5692db3f4010000006ad83fabee8c000ee7e8420e (good)
+;; QUESTION SECTION:
+;www.zeta.signed.		IN	A
+
+;; ANSWER SECTION:
+www.zeta.signed.	86400	IN	A	172.30.0.111
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 88
+
+##### dig @172.30.0.100 eta.unsigned SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 eta.unsigned SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 24873
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: b224b26909891567010000006ad83fabb48918eb50893930 (good)
+;; QUESTION SECTION:
+;eta.unsigned.			IN	SOA
+
+;; ANSWER SECTION:
+eta.unsigned.		86400	IN	SOA	ns.eta.unsigned. admin.eta.unsigned. 2026102001 3600 900 604800 86400
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 114
+
+##### dig @172.30.0.101 eta.unsigned SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 eta.unsigned SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 37806
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: de66cee7cc58e413010000006ad83fab64762dba22ff590f (good)
+;; QUESTION SECTION:
+;eta.unsigned.			IN	SOA
+
+;; ANSWER SECTION:
+eta.unsigned.		86400	IN	SOA	ns.eta.unsigned. admin.eta.unsigned. 2026102001 3600 900 604800 86400
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 114
+
+##### dig @172.30.0.100 www.eta.unsigned A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 www.eta.unsigned A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 61979
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: ec432751385c976f010000006ad83fab4a9e02af47b09003 (good)
+;; QUESTION SECTION:
+;www.eta.unsigned.		IN	A
+
+;; ANSWER SECTION:
+www.eta.unsigned.	86400	IN	A	172.30.0.121
+
+;; Query time: 0 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 89
+
+##### dig @172.30.0.101 www.eta.unsigned A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 www.eta.unsigned A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 24946
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: ac8885635e822f19010000006ad83fab22861b354deba926 (good)
+;; QUESTION SECTION:
+;www.eta.unsigned.		IN	A
+
+;; ANSWER SECTION:
+www.eta.unsigned.	86400	IN	A	172.30.0.121
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 89
+
+##### dig @172.30.0.100 theta.unsigned SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 theta.unsigned SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 53234
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: b80317c0544b9774010000006ad83fabe35ecd61e30d018b (good)
+;; QUESTION SECTION:
+;theta.unsigned.			IN	SOA
+
+;; ANSWER SECTION:
+theta.unsigned.		86400	IN	SOA	ns.theta.unsigned. admin.theta.unsigned. 2026102001 3600 900 604800 86400
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 116
+
+##### dig @172.30.0.101 theta.unsigned SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 theta.unsigned SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 41044
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: f52972c5d553863f010000006ad83fab20ec3617ccd7e99a (good)
+;; QUESTION SECTION:
+;theta.unsigned.			IN	SOA
+
+;; ANSWER SECTION:
+theta.unsigned.		86400	IN	SOA	ns.theta.unsigned. admin.theta.unsigned. 2026102001 3600 900 604800 86400
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 116
+
+##### dig @172.30.0.100 www.theta.unsigned A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 www.theta.unsigned A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 35813
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 8e3fe387d4b0bd49010000006ad83fab29686fac7caf2a9f (good)
+;; QUESTION SECTION:
+;www.theta.unsigned.		IN	A
+
+;; ANSWER SECTION:
+www.theta.unsigned.	86400	IN	A	172.30.0.131
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 91
+
+##### dig @172.30.0.101 www.theta.unsigned A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 www.theta.unsigned A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 47302
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 740cb389e20e7623010000006ad83fabe14478f136a9aa88 (good)
+;; QUESTION SECTION:
+;www.theta.unsigned.		IN	A
+
+;; ANSWER SECTION:
+www.theta.unsigned.	86400	IN	A	172.30.0.131
+
+;; Query time: 0 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 91
+
+##### dig @172.30.0.100 iota.unsigned SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 iota.unsigned SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 61406
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: e1ac218ced133034010000006ad83fabb5bf8f9e95b9a2a4 (good)
+;; QUESTION SECTION:
+;iota.unsigned.			IN	SOA
+
+;; ANSWER SECTION:
+iota.unsigned.		86400	IN	SOA	ns.iota.unsigned. admin.iota.unsigned. 2026102001 3600 900 604800 86400
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 115
+
+##### dig @172.30.0.101 iota.unsigned SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 iota.unsigned SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 57242
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 0714bda7d60b89f5010000006ad83fabfa358af61ab8ee28 (good)
+;; QUESTION SECTION:
+;iota.unsigned.			IN	SOA
+
+;; ANSWER SECTION:
+iota.unsigned.		86400	IN	SOA	ns.iota.unsigned. admin.iota.unsigned. 2026102001 3600 900 604800 86400
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:31 CST 2026
+;; MSG SIZE  rcvd: 115
+
+##### dig @172.30.0.100 www.iota.unsigned A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 www.iota.unsigned A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 64873
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 9d3c93fbf3db54a4010000006ad83faca3c708c8b2676988 (good)
+;; QUESTION SECTION:
+;www.iota.unsigned.		IN	A
+
+;; ANSWER SECTION:
+www.iota.unsigned.	86400	IN	A	172.30.0.141
+
+;; Query time: 7 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:32 CST 2026
+;; MSG SIZE  rcvd: 90
+
+##### dig @172.30.0.101 www.iota.unsigned A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 www.iota.unsigned A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 43579
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: fa89ba9c5bbfb07c010000006ad83face6ff4903c128de08 (good)
+;; QUESTION SECTION:
+;www.iota.unsigned.		IN	A
+
+;; ANSWER SECTION:
+www.iota.unsigned.	86400	IN	A	172.30.0.141
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:32 CST 2026
+;; MSG SIZE  rcvd: 90
+
+##### dig @172.30.0.100 caducada.test SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 caducada.test SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 26164
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: c4790be62341215f010000006ad83facc3c779051c4309c3 (good)
+;; QUESTION SECTION:
+;caducada.test.			IN	SOA
+
+;; ANSWER SECTION:
+caducada.test.		86400	IN	SOA	ns.caducada.test. admin.caducada.test. 2026102002 3600 900 604800 86400
+caducada.test.		86400	IN	RRSIG	SOA 13 2 86400 20261011042155 20260911042155 34578 caducada.test. VgADhpDrhLWT6HQdx+n7surkQ0tDhg1lhAlpPjN8s20BRHwfxrhladxz SSO4W2sGcIIXHXHdQTYZD0hwRMYXhA==
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:32 CST 2026
+;; MSG SIZE  rcvd: 224
+
+##### dig @172.30.0.101 caducada.test SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 caducada.test SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: SERVFAIL, id: 57981
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 8ac973f569803aff010000006ad83facb5f81f62d7800a2a (good)
+; EDE: 7 (Signature Expired): (caducada.test/DNSKEY)
+;; QUESTION SECTION:
+;caducada.test.			IN	SOA
+
+;; Query time: 19 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:32 CST 2026
+;; MSG SIZE  rcvd: 96
+
+##### dig @172.30.0.100 www.caducada.test A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 www.caducada.test A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 4828
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: d2758b80a322e55d010000006ad83fac185c8027d48882a4 (good)
+;; QUESTION SECTION:
+;www.caducada.test.		IN	A
+
+;; ANSWER SECTION:
+www.caducada.test.	86400	IN	A	172.30.0.151
+www.caducada.test.	86400	IN	RRSIG	A 13 3 86400 20261011042155 20260911042155 34578 caducada.test. nAmcP25+NHOeKXkwL4z5iwh6az+QUJ8P/Vh2uRmkiUqrpivB9Avoa7ac vB8PXXwPthf3nRY2JbX+uc6jCuuHWQ==
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:32 CST 2026
+;; MSG SIZE  rcvd: 199
+
+##### dig @172.30.0.101 www.caducada.test A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 www.caducada.test A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: SERVFAIL, id: 18038
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 5abbeea06c7f3349010000006ad83facc22bdd3f3a340bad (good)
+; EDE: 7 (Signature Expired): (caducada.test/DNSKEY)
+;; QUESTION SECTION:
+;www.caducada.test.		IN	A
+
+;; Query time: 11 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:32 CST 2026
+;; MSG SIZE  rcvd: 100
+
+##### dig @172.30.0.100 sinds.test SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 sinds.test SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 52148
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 69a4641574a44949010000006ad83facd322847105fc552d (good)
+;; QUESTION SECTION:
+;sinds.test.			IN	SOA
+
+;; ANSWER SECTION:
+sinds.test.		86400	IN	SOA	ns.sinds.test. admin.sinds.test. 2026102002 3600 900 604800 86400
+sinds.test.		86400	IN	RRSIG	SOA 13 2 86400 20261120032156 20261021032156 22778 sinds.test. ZXw6QMPIWeQsNUiJmsA2invdlX9a4WAJU73hrvT4fbD23xTVWT3knXrC tIFyWFktEJvoxtNNvYouAKpkfNKnTw==
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:32 CST 2026
+;; MSG SIZE  rcvd: 218
+
+##### dig @172.30.0.101 sinds.test SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 sinds.test SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 64119
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 710d801bbaba73c3010000006ad83facc3cca572087adab5 (good)
+;; QUESTION SECTION:
+;sinds.test.			IN	SOA
+
+;; ANSWER SECTION:
+sinds.test.		86400	IN	SOA	ns.sinds.test. admin.sinds.test. 2026102002 3600 900 604800 86400
+sinds.test.		86400	IN	RRSIG	SOA 13 2 86400 20261120032156 20261021032156 22778 sinds.test. ZXw6QMPIWeQsNUiJmsA2invdlX9a4WAJU73hrvT4fbD23xTVWT3knXrC tIFyWFktEJvoxtNNvYouAKpkfNKnTw==
+
+;; Query time: 15 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:32 CST 2026
+;; MSG SIZE  rcvd: 218
+
+##### dig @172.30.0.100 www.sinds.test A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 www.sinds.test A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 17111
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 3fa450901348f1a3010000006ad83fac47697ef0f257a8c2 (good)
+;; QUESTION SECTION:
+;www.sinds.test.			IN	A
+
+;; ANSWER SECTION:
+www.sinds.test.		86400	IN	A	172.30.0.161
+www.sinds.test.		86400	IN	RRSIG	A 13 3 86400 20261120032156 20261021032156 22778 sinds.test. n1MBO1PKpjDwCI71Mh2N+xHLNR8W8wcHPnxcj/Zk6uTnSo3u8EDylzkz 0CmMpcWrmRbBt/v8uMnGY8dA5R7SXQ==
+
+;; Query time: 0 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:32 CST 2026
+;; MSG SIZE  rcvd: 193
+
+##### dig @172.30.0.101 www.sinds.test A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 www.sinds.test A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 52806
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 377dd0990c8b0d6b010000006ad83fac167f66370b39cbb5 (good)
+;; QUESTION SECTION:
+;www.sinds.test.			IN	A
+
+;; ANSWER SECTION:
+www.sinds.test.		86400	IN	A	172.30.0.161
+www.sinds.test.		86400	IN	RRSIG	A 13 3 86400 20261120032156 20261021032156 22778 sinds.test. n1MBO1PKpjDwCI71Mh2N+xHLNR8W8wcHPnxcj/Zk6uTnSo3u8EDylzkz 0CmMpcWrmRbBt/v8uMnGY8dA5R7SXQ==
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:32 CST 2026
+;; MSG SIZE  rcvd: 193
+
+##### dig @172.30.0.100 algdebil.test SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 algdebil.test SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 41358
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 952d654ea5b7f32f010000006ad83faccdf3e199592d5108 (good)
+;; QUESTION SECTION:
+;algdebil.test.			IN	SOA
+
+;; ANSWER SECTION:
+algdebil.test.		86400	IN	SOA	ns.algdebil.test. admin.algdebil.test. 2026102002 3600 900 604800 86400
+algdebil.test.		86400	IN	RRSIG	SOA 5 2 86400 20261120032157 20261021032157 58830 algdebil.test. MprJKAZ0LCNn/xNeKHK2T49gsPaqnw3JUNtMDIDtGFh/0Fw9rSgFF0VE 2qm3V5eZ3zVlUUNhdSx2Rl/feHruukXd6JAWnbrCn4xJEQhsMjdzxX1R ScIFn9hzlfan7iu+9i4/F7kakCKKY85rn/4NXm56LD173FvH94tveS6O U84=
+
+;; Query time: 7 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:32 CST 2026
+;; MSG SIZE  rcvd: 288
+
+##### dig @172.30.0.101 algdebil.test SOA +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 algdebil.test SOA +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 65105
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 68727351f2ef88e8010000006ad83fac8d99cd1600d89afc (good)
+;; QUESTION SECTION:
+;algdebil.test.			IN	SOA
+
+;; ANSWER SECTION:
+algdebil.test.		86400	IN	SOA	ns.algdebil.test. admin.algdebil.test. 2026102002 3600 900 604800 86400
+algdebil.test.		86400	IN	RRSIG	SOA 5 2 86400 20261120032157 20261021032157 58830 algdebil.test. MprJKAZ0LCNn/xNeKHK2T49gsPaqnw3JUNtMDIDtGFh/0Fw9rSgFF0VE 2qm3V5eZ3zVlUUNhdSx2Rl/feHruukXd6JAWnbrCn4xJEQhsMjdzxX1R ScIFn9hzlfan7iu+9i4/F7kakCKKY85rn/4NXm56LD173FvH94tveS6O U84=
+
+;; Query time: 7 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:32 CST 2026
+;; MSG SIZE  rcvd: 288
+
+##### dig @172.30.0.100 www.algdebil.test A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.100 www.algdebil.test A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 20850
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 72d5ee83675cacf7010000006ad83fac6d5f95e6fae54caa (good)
+;; QUESTION SECTION:
+;www.algdebil.test.		IN	A
+
+;; ANSWER SECTION:
+www.algdebil.test.	86400	IN	A	172.30.0.171
+www.algdebil.test.	86400	IN	RRSIG	A 5 3 86400 20261120032157 20261021032157 58830 algdebil.test. YfIOX3MNLgFQ86DXNhtnghlgaHJ1Ywoeph4HmF3zZi3J/fLNOiegEMlb Pnqy/f+yuhkzDsPCwVdQOe4kGF+UJaakWGMaEk+Y4DsxLTX3qU/Rqgdo HsHhQQ8rforJvOguItqSkEq55RDI3guREPgnSX80JFcXzLQXYQaH+jq4 RzY=
+
+;; Query time: 0 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Tue Oct 20 22:29:32 CST 2026
+;; MSG SIZE  rcvd: 263
+
+##### dig @172.30.0.101 www.algdebil.test A +dnssec
+
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @172.30.0.101 www.algdebil.test A +dnssec +time=2 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 6737
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 1bc82e420b89a85c010000006ad83facafb31bc48e4589ec (good)
+;; QUESTION SECTION:
+;www.algdebil.test.		IN	A
+
+;; ANSWER SECTION:
+www.algdebil.test.	86400	IN	A	172.30.0.171
+www.algdebil.test.	86400	IN	RRSIG	A 5 3 86400 20261120032157 20261021032157 58830 algdebil.test. YfIOX3MNLgFQ86DXNhtnghlgaHJ1Ywoeph4HmF3zZi3J/fLNOiegEMlb Pnqy/f+yuhkzDsPCwVdQOe4kGF+UJaakWGMaEk+Y4DsxLTX3qU/Rqgdo HsHhQQ8rforJvOguItqSkEq55RDI3guREPgnSX80JFcXzLQXYQaH+jq4 RzY=
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.101#53(172.30.0.101) (UDP)
+;; WHEN: Tue Oct 20 22:29:32 CST 2026
+;; MSG SIZE  rcvd: 263
+

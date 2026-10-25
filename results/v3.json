@@ -1,0 +1,4768 @@
+{
+ "generado": "2026-10-21 04:30:41Z",
+ "raiz": "172.30.0.10",
+ "zonas": {
+  ".": {
+   "zona": ".",
+   "cfg": {
+    "padre": null,
+    "ip": "172.30.0.10",
+    "esperado": "SECURE",
+    "escenario": "ok",
+    "nota": "raíz (ECDSA P-256, NSEC)",
+    "alg": "ECDSAP256SHA256",
+    "nsec": "NSEC"
+   },
+   "hallazgos": [
+    [
+     "AVISO",
+     "zone walking posible: NSEC reveló 5 nombres de la zona"
+    ]
+   ],
+   "ip": "172.30.0.10",
+   "firmada": true,
+   "estado": "SECURE",
+   "razones": [
+    "ancla de confianza 26207 coincide y valida el DNSKEY de la raíz"
+   ],
+   "enlace": {
+    "padre": null,
+    "hijo": ".",
+    "ds": [
+     {
+      "tag": 26207,
+      "alg": 13,
+      "alg_nombre": "ECDSAP256SHA256",
+      "digest_tipo": 2,
+      "digest_nombre": "SHA-256",
+      "digest_estado": "AUTORIZADO",
+      "digest": "4E8E590C965AF71D4C4A97767B82CFE8A5946431C881AC659DC31F29BB2F57E1",
+      "coincide": true,
+      "clave_uso": "KSK"
+     }
+    ],
+    "rfc": [
+     "RFC 4035 §4.4 (ancla de confianza)"
+    ]
+   },
+   "isla": false,
+   "rrsets": [
+    {
+     "nombre": ".",
+     "tipo": "SOA",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.root. admin.root. 2026081602 3600 900 604800 86400"
+     ],
+     "firmas": [
+      {
+       "cubre": "SOA",
+       "alg": 13,
+       "tag": 3216,
+       "firmante": ".",
+       "inicio": 1792552918,
+       "fin": 1795144918,
+       "labels": 0,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": ".",
+     "tipo": "NS",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.root."
+     ],
+     "firmas": [
+      {
+       "cubre": "NS",
+       "alg": 13,
+       "tag": 3216,
+       "firmante": ".",
+       "inicio": 1792552918,
+       "fin": 1795144918,
+       "labels": 0,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": ".",
+     "tipo": "DNSKEY",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "256 3 13 dI3GMmDE1gHFNJj00Rq9i7LI24CGpshf JgZruewwTx+agsCT98ta7j4yY5pd",
+      "257 3 13 6/sGRSTD7ZkawWwx8ArXDvamvsfxc22G av0gGIFcGKSZnd35cTd/y7A7F+aV"
+     ],
+     "firmas": [
+      {
+       "cubre": "DNSKEY",
+       "alg": 13,
+       "tag": 3216,
+       "firmante": ".",
+       "inicio": 1792552918,
+       "fin": 1795144918,
+       "labels": 0,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      },
+      {
+       "cubre": "DNSKEY",
+       "alg": 13,
+       "tag": 26207,
+       "firmante": ".",
+       "inicio": 1792552918,
+       "fin": 1795144918,
+       "labels": 0,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "KSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "ns.root.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.10"
+     ],
+     "firmas": [
+      {
+       "cubre": "A",
+       "alg": 13,
+       "tag": 3216,
+       "firmante": ".",
+       "inicio": 1792552918,
+       "fin": 1795144918,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    }
+   ],
+   "soa": {
+    "mname": "ns.root.",
+    "rname": "admin.root.",
+    "serial": 2026081602,
+    "refresh": 3600,
+    "retry": 900,
+    "expire": 604800,
+    "minimum": 86400
+   },
+   "dnskey": [
+    {
+     "tag": 3216,
+     "flags": 256,
+     "uso": "ZSK",
+     "alg": 13,
+     "alg_nombre": "ECDSAP256SHA256",
+     "alg_estado": "AUTORIZADO",
+     "tipo_clave": "EC P-256",
+     "bits": 256,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": true,
+     "estado": "válida",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:58Z",
+      "publish": "2026-10-21 04:21:58Z",
+      "activate": "2026-10-21 04:21:58Z"
+     },
+     "problemas": [],
+     "avisos": []
+    },
+    {
+     "tag": 26207,
+     "flags": 257,
+     "uso": "KSK (SEP)",
+     "alg": 13,
+     "alg_nombre": "ECDSAP256SHA256",
+     "alg_estado": "AUTORIZADO",
+     "tipo_clave": "EC P-256",
+     "bits": 256,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": false,
+     "estado": "válida",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:58Z",
+      "publish": "2026-10-21 04:21:58Z",
+      "activate": "2026-10-21 04:21:58Z"
+     },
+     "problemas": [],
+     "avisos": []
+    }
+   ],
+   "denegacion": {
+    "modo": "NSEC",
+    "nsec3": null,
+    "nsec3param": null,
+    "avisos": [],
+    "nsec_ttl": 86400,
+    "nsec_ttl_ok": true,
+    "firmas_ok": true
+   },
+   "dnskey_rrset_firma": {
+    "ok": true,
+    "motivo": "ok",
+    "firmantes": [
+     [
+      3216,
+      "ZSK"
+     ],
+     [
+      26207,
+      "KSK"
+     ]
+    ]
+   },
+   "walk": {
+    "modo": "NSEC",
+    "nombres": [
+     {
+      "nombre": ".",
+      "tipos": [
+       "NS",
+       "SOA",
+       "RRSIG",
+       "NSEC",
+       "DNSKEY"
+      ]
+     },
+     {
+      "nombre": "ns.root.",
+      "tipos": [
+       "A",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "signed.",
+      "tipos": [
+       "NS",
+       "DS",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "test.",
+      "tipos": [
+       "NS",
+       "DS",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "unsigned.",
+      "tipos": [
+       "NS",
+       "RRSIG",
+       "NSEC"
+      ]
+     }
+    ],
+    "enumerada": true
+   },
+   "esperado": "SECURE",
+   "coincide_esperado": true
+  },
+  "unsigned.": {
+   "zona": "unsigned.",
+   "cfg": {
+    "padre": ".",
+    "ip": "172.30.0.20",
+    "esperado": "INSECURE",
+    "escenario": "ok",
+    "nota": "gTLD sin firmar (Actividad 2)",
+    "alg": null,
+    "nsec": null
+   },
+   "hallazgos": [],
+   "ip": "172.30.0.20",
+   "firmada": false,
+   "estado": "INSECURE",
+   "razones": [
+    "delegación insegura DEMOSTRADA: NSEC firmado prueba que no existe DS"
+   ],
+   "enlace": {
+    "padre": ".",
+    "hijo": "unsigned.",
+    "ds": [],
+    "prueba_sin_ds": {
+     "tipo": "NSEC",
+     "firmada": true,
+     "motivo": "ok"
+    },
+    "rfc": [
+     "RFC 4035 §5.2",
+     "RFC 5155 §8.9 (NSEC3)"
+    ]
+   },
+   "isla": false,
+   "rrsets": [
+    {
+     "nombre": "unsigned.",
+     "tipo": "SOA",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.unsigned. admin.unsigned. 2026082001 3600 900 604800 86400"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "unsigned.",
+     "tipo": "NS",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.unsigned."
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "ns.unsigned.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.20"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    }
+   ],
+   "soa": {
+    "mname": "ns.unsigned.",
+    "rname": "admin.unsigned.",
+    "serial": 2026082001,
+    "refresh": 3600,
+    "retry": 900,
+    "expire": 604800,
+    "minimum": 86400
+   },
+   "dnskey": [],
+   "denegacion": {
+    "modo": "ninguno",
+    "nsec3": null,
+    "nsec3param": null,
+    "avisos": [],
+    "nsec_ttl": null,
+    "nsec_ttl_ok": null,
+    "firmas_ok": null
+   },
+   "walk": null,
+   "esperado": "INSECURE",
+   "coincide_esperado": true
+  },
+  "signed.": {
+   "zona": "signed.",
+   "cfg": {
+    "padre": ".",
+    "ip": "172.30.0.40",
+    "esperado": "SECURE",
+    "escenario": "ok",
+    "nota": "gTLD firmado (ECDSA P-256, NSEC)",
+    "alg": "ECDSAP256SHA256",
+    "nsec": "NSEC"
+   },
+   "hallazgos": [
+    [
+     "AVISO",
+     "zone walking posible: NSEC reveló 7 nombres de la zona"
+    ]
+   ],
+   "ip": "172.30.0.40",
+   "firmada": true,
+   "estado": "SECURE",
+   "razones": [
+    "DS 34708 coincide con el DNSKEY y la firma del DNSKEY RRset es válida"
+   ],
+   "enlace": {
+    "padre": ".",
+    "hijo": "signed.",
+    "ds": [
+     {
+      "tag": 34708,
+      "alg": 13,
+      "alg_nombre": "ECDSAP256SHA256",
+      "digest_tipo": 2,
+      "digest_nombre": "SHA-256",
+      "digest_estado": "AUTORIZADO",
+      "digest": "A3CF4BCE6CCA08816286BE6A203C1FB094ECA43B9FAEF585EC9A863C2BEBA323",
+      "coincide": true,
+      "clave_uso": "KSK"
+     }
+    ],
+    "prueba_sin_ds": null,
+    "rfc": [
+     "RFC 4034 §5 (DS)",
+     "RFC 4035 §5.2",
+     "RFC 4509 / RFC 6605",
+     "RFC 8624"
+    ],
+    "ds_ttl": 86400,
+    "ds_sigs": [
+     {
+      "cubre": "DS",
+      "alg": 13,
+      "tag": 3216,
+      "firmante": ".",
+      "inicio": 1792552918,
+      "fin": 1795144918,
+      "labels": 1,
+      "ttl_orig": 86400,
+      "alg_nombre": "ECDSAP256SHA256",
+      "llave_presente": true,
+      "uso_llave": "ZSK",
+      "crypto": true,
+      "motivo": null,
+      "vigencia": "vigente",
+      "dias_restantes": 30.0,
+      "firmante_ok": true,
+      "valida": true
+     }
+    ]
+   },
+   "isla": false,
+   "rrsets": [
+    {
+     "nombre": "signed.",
+     "tipo": "SOA",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.signed. admin.signed. 2026101302 3600 900 604800 86400"
+     ],
+     "firmas": [
+      {
+       "cubre": "SOA",
+       "alg": 13,
+       "tag": 55960,
+       "firmante": "signed.",
+       "inicio": 1792552917,
+       "fin": 1795144917,
+       "labels": 1,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "signed.",
+     "tipo": "NS",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.signed."
+     ],
+     "firmas": [
+      {
+       "cubre": "NS",
+       "alg": 13,
+       "tag": 55960,
+       "firmante": "signed.",
+       "inicio": 1792552917,
+       "fin": 1795144917,
+       "labels": 1,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "signed.",
+     "tipo": "DNSKEY",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "257 3 13 zIZwQv5ZZXiTcSSETNMLkMeQ+giRLio7 5c5DLA7wQVblrA6AQG+52WQIUHFd",
+      "256 3 13 YwFLPjsYRTRGgva2FhWbDO0/KpIjMaPr +nKJLSIc1u41dl5H/3FpXtkOUQ2f"
+     ],
+     "firmas": [
+      {
+       "cubre": "DNSKEY",
+       "alg": 13,
+       "tag": 34708,
+       "firmante": "signed.",
+       "inicio": 1792552917,
+       "fin": 1795144917,
+       "labels": 1,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "KSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      },
+      {
+       "cubre": "DNSKEY",
+       "alg": 13,
+       "tag": 55960,
+       "firmante": "signed.",
+       "inicio": 1792552917,
+       "fin": 1795144917,
+       "labels": 1,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "ns.signed.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.40"
+     ],
+     "firmas": [
+      {
+       "cubre": "A",
+       "alg": 13,
+       "tag": 55960,
+       "firmante": "signed.",
+       "inicio": 1792552917,
+       "fin": 1795144917,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    }
+   ],
+   "soa": {
+    "mname": "ns.signed.",
+    "rname": "admin.signed.",
+    "serial": 2026101302,
+    "refresh": 3600,
+    "retry": 900,
+    "expire": 604800,
+    "minimum": 86400
+   },
+   "dnskey": [
+    {
+     "tag": 34708,
+     "flags": 257,
+     "uso": "KSK (SEP)",
+     "alg": 13,
+     "alg_nombre": "ECDSAP256SHA256",
+     "alg_estado": "AUTORIZADO",
+     "tipo_clave": "EC P-256",
+     "bits": 256,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": false,
+     "estado": "válida",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:57Z",
+      "publish": "2026-10-21 04:21:57Z",
+      "activate": "2026-10-21 04:21:57Z"
+     },
+     "problemas": [],
+     "avisos": []
+    },
+    {
+     "tag": 55960,
+     "flags": 256,
+     "uso": "ZSK",
+     "alg": 13,
+     "alg_nombre": "ECDSAP256SHA256",
+     "alg_estado": "AUTORIZADO",
+     "tipo_clave": "EC P-256",
+     "bits": 256,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": true,
+     "estado": "válida",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:57Z",
+      "publish": "2026-10-21 04:21:57Z",
+      "activate": "2026-10-21 04:21:57Z"
+     },
+     "problemas": [],
+     "avisos": []
+    }
+   ],
+   "denegacion": {
+    "modo": "NSEC",
+    "nsec3": null,
+    "nsec3param": null,
+    "avisos": [],
+    "nsec_ttl": 86400,
+    "nsec_ttl_ok": true,
+    "firmas_ok": true
+   },
+   "dnskey_rrset_firma": {
+    "ok": true,
+    "motivo": "ok",
+    "firmantes": [
+     [
+      34708,
+      "KSK"
+     ],
+     [
+      55960,
+      "ZSK"
+     ]
+    ]
+   },
+   "walk": {
+    "modo": "NSEC",
+    "nombres": [
+     {
+      "nombre": "signed.",
+      "tipos": [
+       "NS",
+       "SOA",
+       "RRSIG",
+       "NSEC",
+       "DNSKEY"
+      ]
+     },
+     {
+      "nombre": "beta.signed.",
+      "tipos": [
+       "NS",
+       "DS",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "delta.signed.",
+      "tipos": [
+       "NS",
+       "DS",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "epsilon.signed.",
+      "tipos": [
+       "NS",
+       "DS",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "gamma.signed.",
+      "tipos": [
+       "NS",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "ns.signed.",
+      "tipos": [
+       "A",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "zeta.signed.",
+      "tipos": [
+       "NS",
+       "RRSIG",
+       "NSEC"
+      ]
+     }
+    ],
+    "enumerada": true
+   },
+   "esperado": "SECURE",
+   "coincide_esperado": true
+  },
+  "test.": {
+   "zona": "test.",
+   "cfg": {
+    "padre": ".",
+    "ip": "172.30.0.70",
+    "esperado": "SECURE",
+    "escenario": "ok",
+    "nota": "gTLD firmado para pruebas (ECDSA P-384, NSEC3 sin sal, 0 iteraciones)",
+    "alg": "ECDSAP384SHA384",
+    "nsec": "NSEC3"
+   },
+   "hallazgos": [
+    [
+     "INFO",
+     "NSEC3 impide el recorrido directo, pero un diccionario recuperó 2 nombres"
+    ]
+   ],
+   "ip": "172.30.0.70",
+   "firmada": true,
+   "estado": "SECURE",
+   "razones": [
+    "DS 30542 coincide con el DNSKEY y la firma del DNSKEY RRset es válida"
+   ],
+   "enlace": {
+    "padre": ".",
+    "hijo": "test.",
+    "ds": [
+     {
+      "tag": 30542,
+      "alg": 14,
+      "alg_nombre": "ECDSAP384SHA384",
+      "digest_tipo": 2,
+      "digest_nombre": "SHA-256",
+      "digest_estado": "AUTORIZADO",
+      "digest": "A0C16E80106B9544AB9F202B3F464586249EAC794E06E79C6896CE9B0304C380",
+      "coincide": true,
+      "clave_uso": "KSK"
+     }
+    ],
+    "prueba_sin_ds": null,
+    "rfc": [
+     "RFC 4034 §5 (DS)",
+     "RFC 4035 §5.2",
+     "RFC 4509 / RFC 6605",
+     "RFC 8624"
+    ],
+    "ds_ttl": 86400,
+    "ds_sigs": [
+     {
+      "cubre": "DS",
+      "alg": 13,
+      "tag": 3216,
+      "firmante": ".",
+      "inicio": 1792552918,
+      "fin": 1795144918,
+      "labels": 1,
+      "ttl_orig": 86400,
+      "alg_nombre": "ECDSAP256SHA256",
+      "llave_presente": true,
+      "uso_llave": "ZSK",
+      "crypto": true,
+      "motivo": null,
+      "vigencia": "vigente",
+      "dias_restantes": 30.0,
+      "firmante_ok": true,
+      "valida": true
+     }
+    ]
+   },
+   "isla": false,
+   "rrsets": [
+    {
+     "nombre": "test.",
+     "tipo": "SOA",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.test. admin.test. 2026102002 3600 900 604800 86400"
+     ],
+     "firmas": [
+      {
+       "cubre": "SOA",
+       "alg": 14,
+       "tag": 40629,
+       "firmante": "test.",
+       "inicio": 1792552918,
+       "fin": 1795144918,
+       "labels": 1,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP384SHA384",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "test.",
+     "tipo": "NS",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.test."
+     ],
+     "firmas": [
+      {
+       "cubre": "NS",
+       "alg": 14,
+       "tag": 40629,
+       "firmante": "test.",
+       "inicio": 1792552918,
+       "fin": 1795144918,
+       "labels": 1,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP384SHA384",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "test.",
+     "tipo": "DNSKEY",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "256 3 14 XKe1B/ASpOMruBZczjjAr4i0ggEwdp9r 3iuN3X5csV8h2sytVPy06n6sz6qV",
+      "257 3 14 A4LzU9QbOyZhn67IR3+KogYQL9I8YT0K ozZyHS8GxyiOEKLL0NitKuLUlVkJ"
+     ],
+     "firmas": [
+      {
+       "cubre": "DNSKEY",
+       "alg": 14,
+       "tag": 30542,
+       "firmante": "test.",
+       "inicio": 1792552918,
+       "fin": 1795144918,
+       "labels": 1,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP384SHA384",
+       "llave_presente": true,
+       "uso_llave": "KSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      },
+      {
+       "cubre": "DNSKEY",
+       "alg": 14,
+       "tag": 40629,
+       "firmante": "test.",
+       "inicio": 1792552918,
+       "fin": 1795144918,
+       "labels": 1,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP384SHA384",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "ns.test.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.70"
+     ],
+     "firmas": [
+      {
+       "cubre": "A",
+       "alg": 14,
+       "tag": 40629,
+       "firmante": "test.",
+       "inicio": 1792552918,
+       "fin": 1795144918,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP384SHA384",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "test.",
+     "tipo": "NSEC3PARAM",
+     "ttl_obs": 0,
+     "ttl_esp": 0,
+     "ttl_ok": true,
+     "datos": [
+      "1 0 0 -"
+     ],
+     "firmas": [
+      {
+       "cubre": "NSEC3PARAM",
+       "alg": 14,
+       "tag": 40629,
+       "firmante": "test.",
+       "inicio": 1792552918,
+       "fin": 1795144918,
+       "labels": 1,
+       "ttl_orig": 0,
+       "alg_nombre": "ECDSAP384SHA384",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    }
+   ],
+   "soa": {
+    "mname": "ns.test.",
+    "rname": "admin.test.",
+    "serial": 2026102002,
+    "refresh": 3600,
+    "retry": 900,
+    "expire": 604800,
+    "minimum": 86400
+   },
+   "dnskey": [
+    {
+     "tag": 40629,
+     "flags": 256,
+     "uso": "ZSK",
+     "alg": 14,
+     "alg_nombre": "ECDSAP384SHA384",
+     "alg_estado": "AUTORIZADO",
+     "tipo_clave": "EC P-384",
+     "bits": 384,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": true,
+     "estado": "válida",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:57Z",
+      "publish": "2026-10-21 04:21:57Z",
+      "activate": "2026-10-21 04:21:57Z"
+     },
+     "problemas": [],
+     "avisos": []
+    },
+    {
+     "tag": 30542,
+     "flags": 257,
+     "uso": "KSK (SEP)",
+     "alg": 14,
+     "alg_nombre": "ECDSAP384SHA384",
+     "alg_estado": "AUTORIZADO",
+     "tipo_clave": "EC P-384",
+     "bits": 384,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": false,
+     "estado": "válida",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:57Z",
+      "publish": "2026-10-21 04:21:57Z",
+      "activate": "2026-10-21 04:21:57Z"
+     },
+     "problemas": [],
+     "avisos": []
+    }
+   ],
+   "denegacion": {
+    "modo": "NSEC3",
+    "nsec3": {
+     "alg": 1,
+     "flags": 0,
+     "optout": false,
+     "iteraciones": 0,
+     "sal": "-"
+    },
+    "nsec3param": {
+     "alg": 1,
+     "flags": 0,
+     "iteraciones": 0,
+     "sal": "-"
+    },
+    "avisos": [],
+    "nsec_ttl": 86400,
+    "nsec_ttl_ok": true,
+    "firmas_ok": true
+   },
+   "dnskey_rrset_firma": {
+    "ok": true,
+    "motivo": "ok",
+    "firmantes": [
+     [
+      30542,
+      "KSK"
+     ],
+     [
+      40629,
+      "ZSK"
+     ]
+    ]
+   },
+   "walk": {
+    "modo": "NSEC3",
+    "nombres": [],
+    "enumerada": false,
+    "nsec3": {
+     "hashes_unicos": 5,
+     "cadena_cerrada": true,
+     "recuperados": [
+      {
+       "nombre": "ns.test.",
+       "hash": "FJ6TVCIL6NJKNSNGSJD7IT4C3TOPDS19",
+       "tipos": [
+        "A",
+        "RRSIG"
+       ]
+      },
+      {
+       "nombre": "test.",
+       "hash": "5U2I2H5CO0EBB4R9HIPBKU7PEA6GGPSV",
+       "tipos": [
+        "NS",
+        "SOA",
+        "RRSIG",
+        "DNSKEY",
+        "NSEC3PARAM"
+       ]
+      }
+     ],
+     "sondas": 10,
+     "diccionario": 35,
+     "no_recuperados": 3
+    }
+   },
+   "esperado": "SECURE",
+   "coincide_esperado": true
+  },
+  "zeta.signed.": {
+   "zona": "zeta.signed.",
+   "cfg": {
+    "padre": "signed.",
+    "ip": "172.30.0.110",
+    "esperado": "INSECURE",
+    "escenario": "ok",
+    "nota": "sin firmar",
+    "alg": null,
+    "nsec": null
+   },
+   "hallazgos": [],
+   "ip": "172.30.0.110",
+   "firmada": false,
+   "estado": "INSECURE",
+   "razones": [
+    "delegación insegura DEMOSTRADA: NSEC firmado prueba que no existe DS"
+   ],
+   "enlace": {
+    "padre": "signed.",
+    "hijo": "zeta.signed.",
+    "ds": [],
+    "prueba_sin_ds": {
+     "tipo": "NSEC",
+     "firmada": true,
+     "motivo": "ok"
+    },
+    "rfc": [
+     "RFC 4035 §5.2",
+     "RFC 5155 §8.9 (NSEC3)"
+    ]
+   },
+   "isla": false,
+   "rrsets": [
+    {
+     "nombre": "zeta.signed.",
+     "tipo": "SOA",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.zeta.signed. admin.zeta.signed. 2026102001 3600 900 604800 86400"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "zeta.signed.",
+     "tipo": "NS",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.zeta.signed."
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "ns.zeta.signed.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.110"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "www.zeta.signed.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.111"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    }
+   ],
+   "soa": {
+    "mname": "ns.zeta.signed.",
+    "rname": "admin.zeta.signed.",
+    "serial": 2026102001,
+    "refresh": 3600,
+    "retry": 900,
+    "expire": 604800,
+    "minimum": 86400
+   },
+   "dnskey": [],
+   "denegacion": {
+    "modo": "ninguno",
+    "nsec3": null,
+    "nsec3param": null,
+    "avisos": [],
+    "nsec_ttl": null,
+    "nsec_ttl_ok": null,
+    "firmas_ok": null
+   },
+   "walk": null,
+   "esperado": "INSECURE",
+   "coincide_esperado": true
+  },
+  "eta.unsigned.": {
+   "zona": "eta.unsigned.",
+   "cfg": {
+    "padre": "unsigned.",
+    "ip": "172.30.0.120",
+    "esperado": "INSECURE",
+    "escenario": "ok",
+    "nota": "sin firmar",
+    "alg": null,
+    "nsec": null
+   },
+   "hallazgos": [],
+   "ip": "172.30.0.120",
+   "firmada": false,
+   "estado": "INSECURE",
+   "razones": [
+    "el padre unsigned. ya es INSECURE: la inseguridad se hereda"
+   ],
+   "enlace": {
+    "padre": "unsigned.",
+    "hijo": "eta.unsigned.",
+    "ds": [],
+    "prueba_sin_ds": null,
+    "rfc": [
+     "RFC 4035 §5.2",
+     "RFC 5155 §8.9 (NSEC3)"
+    ]
+   },
+   "isla": false,
+   "rrsets": [
+    {
+     "nombre": "eta.unsigned.",
+     "tipo": "SOA",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.eta.unsigned. admin.eta.unsigned. 2026102001 3600 900 604800 86400"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "eta.unsigned.",
+     "tipo": "NS",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.eta.unsigned."
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "ns.eta.unsigned.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.120"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "www.eta.unsigned.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.121"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    }
+   ],
+   "soa": {
+    "mname": "ns.eta.unsigned.",
+    "rname": "admin.eta.unsigned.",
+    "serial": 2026102001,
+    "refresh": 3600,
+    "retry": 900,
+    "expire": 604800,
+    "minimum": 86400
+   },
+   "dnskey": [],
+   "denegacion": {
+    "modo": "ninguno",
+    "nsec3": null,
+    "nsec3param": null,
+    "avisos": [],
+    "nsec_ttl": null,
+    "nsec_ttl_ok": null,
+    "firmas_ok": null
+   },
+   "walk": null,
+   "esperado": "INSECURE",
+   "coincide_esperado": true
+  },
+  "theta.unsigned.": {
+   "zona": "theta.unsigned.",
+   "cfg": {
+    "padre": "unsigned.",
+    "ip": "172.30.0.130",
+    "esperado": "INSECURE",
+    "escenario": "ok",
+    "nota": "sin firmar",
+    "alg": null,
+    "nsec": null
+   },
+   "hallazgos": [],
+   "ip": "172.30.0.130",
+   "firmada": false,
+   "estado": "INSECURE",
+   "razones": [
+    "el padre unsigned. ya es INSECURE: la inseguridad se hereda"
+   ],
+   "enlace": {
+    "padre": "unsigned.",
+    "hijo": "theta.unsigned.",
+    "ds": [],
+    "prueba_sin_ds": null,
+    "rfc": [
+     "RFC 4035 §5.2",
+     "RFC 5155 §8.9 (NSEC3)"
+    ]
+   },
+   "isla": false,
+   "rrsets": [
+    {
+     "nombre": "theta.unsigned.",
+     "tipo": "SOA",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.theta.unsigned. admin.theta.unsigned. 2026102001 3600 900 604800 86"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "theta.unsigned.",
+     "tipo": "NS",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.theta.unsigned."
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "ns.theta.unsigned.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.130"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "www.theta.unsigned.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.131"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    }
+   ],
+   "soa": {
+    "mname": "ns.theta.unsigned.",
+    "rname": "admin.theta.unsigned.",
+    "serial": 2026102001,
+    "refresh": 3600,
+    "retry": 900,
+    "expire": 604800,
+    "minimum": 86400
+   },
+   "dnskey": [],
+   "denegacion": {
+    "modo": "ninguno",
+    "nsec3": null,
+    "nsec3param": null,
+    "avisos": [],
+    "nsec_ttl": null,
+    "nsec_ttl_ok": null,
+    "firmas_ok": null
+   },
+   "walk": null,
+   "esperado": "INSECURE",
+   "coincide_esperado": true
+  },
+  "iota.unsigned.": {
+   "zona": "iota.unsigned.",
+   "cfg": {
+    "padre": "unsigned.",
+    "ip": "172.30.0.140",
+    "esperado": "INSECURE",
+    "escenario": "ok",
+    "nota": "sin firmar",
+    "alg": null,
+    "nsec": null
+   },
+   "hallazgos": [],
+   "ip": "172.30.0.140",
+   "firmada": false,
+   "estado": "INSECURE",
+   "razones": [
+    "el padre unsigned. ya es INSECURE: la inseguridad se hereda"
+   ],
+   "enlace": {
+    "padre": "unsigned.",
+    "hijo": "iota.unsigned.",
+    "ds": [],
+    "prueba_sin_ds": null,
+    "rfc": [
+     "RFC 4035 §5.2",
+     "RFC 5155 §8.9 (NSEC3)"
+    ]
+   },
+   "isla": false,
+   "rrsets": [
+    {
+     "nombre": "iota.unsigned.",
+     "tipo": "SOA",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.iota.unsigned. admin.iota.unsigned. 2026102001 3600 900 604800 8640"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "iota.unsigned.",
+     "tipo": "NS",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.iota.unsigned."
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "ns.iota.unsigned.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.140"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "www.iota.unsigned.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.141"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    }
+   ],
+   "soa": {
+    "mname": "ns.iota.unsigned.",
+    "rname": "admin.iota.unsigned.",
+    "serial": 2026102001,
+    "refresh": 3600,
+    "retry": 900,
+    "expire": 604800,
+    "minimum": 86400
+   },
+   "dnskey": [],
+   "denegacion": {
+    "modo": "ninguno",
+    "nsec3": null,
+    "nsec3param": null,
+    "avisos": [],
+    "nsec_ttl": null,
+    "nsec_ttl_ok": null,
+    "firmas_ok": null
+   },
+   "walk": null,
+   "esperado": "INSECURE",
+   "coincide_esperado": true
+  },
+  "caducada.test.": {
+   "zona": "caducada.test.",
+   "cfg": {
+    "padre": "test.",
+    "ip": "172.30.0.150",
+    "esperado": "BOGUS",
+    "escenario": "firmas_caducas",
+    "nota": "DS correcto, pero las RRSIG expiraron hace 10 dias",
+    "alg": "ECDSAP256SHA256",
+    "nsec": "NSEC"
+   },
+   "hallazgos": [
+    [
+     "ERROR",
+     "cadena de confianza rota: la RRSIG del DNSKEY firmada por la clave del DS no es válida: RRSIG expirada"
+    ],
+    [
+     "ERROR",
+     "DNSKEY 6549: todas sus firmas están expiradas"
+    ],
+    [
+     "ERROR",
+     "DNSKEY 34578: todas sus firmas están expiradas"
+    ],
+    [
+     "ERROR",
+     "RRSIG de caducada.test. SOA expirada el 2026-10-11 04:21:55Z"
+    ],
+    [
+     "ERROR",
+     "RRSIG de caducada.test. NS expirada el 2026-10-11 04:21:55Z"
+    ],
+    [
+     "ERROR",
+     "RRSIG de caducada.test. DNSKEY expirada el 2026-10-11 04:21:55Z"
+    ],
+    [
+     "ERROR",
+     "RRSIG de caducada.test. DNSKEY expirada el 2026-10-11 04:21:55Z"
+    ],
+    [
+     "ERROR",
+     "RRSIG de ns.caducada.test. A expirada el 2026-10-11 04:21:55Z"
+    ],
+    [
+     "ERROR",
+     "RRSIG de www.caducada.test. A expirada el 2026-10-11 04:21:55Z"
+    ],
+    [
+     "AVISO",
+     "zone walking posible: NSEC reveló 3 nombres de la zona"
+    ]
+   ],
+   "ip": "172.30.0.150",
+   "firmada": true,
+   "estado": "BOGUS",
+   "razones": [
+    "la RRSIG del DNSKEY firmada por la clave del DS no es válida: RRSIG expirada"
+   ],
+   "enlace": {
+    "padre": "test.",
+    "hijo": "caducada.test.",
+    "ds": [
+     {
+      "tag": 6549,
+      "alg": 13,
+      "alg_nombre": "ECDSAP256SHA256",
+      "digest_tipo": 2,
+      "digest_nombre": "SHA-256",
+      "digest_estado": "AUTORIZADO",
+      "digest": "04A75946BE64552545A905AE02E115026C04D86827F748E781B4C899446389B4",
+      "coincide": true,
+      "clave_uso": "KSK"
+     }
+    ],
+    "prueba_sin_ds": null,
+    "rfc": [
+     "RFC 4034 §5 (DS)",
+     "RFC 4035 §5.2",
+     "RFC 4509 / RFC 6605",
+     "RFC 8624"
+    ],
+    "ds_ttl": 86400,
+    "ds_sigs": [
+     {
+      "cubre": "DS",
+      "alg": 14,
+      "tag": 40629,
+      "firmante": "test.",
+      "inicio": 1792552918,
+      "fin": 1795144918,
+      "labels": 2,
+      "ttl_orig": 86400,
+      "alg_nombre": "ECDSAP384SHA384",
+      "llave_presente": true,
+      "uso_llave": "ZSK",
+      "crypto": true,
+      "motivo": null,
+      "vigencia": "vigente",
+      "dias_restantes": 30.0,
+      "firmante_ok": true,
+      "valida": true
+     }
+    ]
+   },
+   "isla": false,
+   "rrsets": [
+    {
+     "nombre": "caducada.test.",
+     "tipo": "SOA",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.caducada.test. admin.caducada.test. 2026102002 3600 900 604800 8640"
+     ],
+     "firmas": [
+      {
+       "cubre": "SOA",
+       "alg": 13,
+       "tag": 34578,
+       "firmante": "caducada.test.",
+       "inicio": 1789100515,
+       "fin": 1791692515,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "expirada",
+       "dias_restantes": -10.0,
+       "firmante_ok": true,
+       "valida": false
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "caducada.test.",
+     "tipo": "NS",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.caducada.test."
+     ],
+     "firmas": [
+      {
+       "cubre": "NS",
+       "alg": 13,
+       "tag": 34578,
+       "firmante": "caducada.test.",
+       "inicio": 1789100515,
+       "fin": 1791692515,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "expirada",
+       "dias_restantes": -10.0,
+       "firmante_ok": true,
+       "valida": false
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "caducada.test.",
+     "tipo": "DNSKEY",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "257 3 13 no39oHCIBm5bG/sI1ZjlJBuxeWOYnNF5 Ois5wuYpPAXsN4Z3ojw8Z7udsghB",
+      "256 3 13 BAXQOBFEzAwQo7eMOENKASOBtcImWBlS Aac8KmxTT3G9BSW9ocf5JQluxZf7"
+     ],
+     "firmas": [
+      {
+       "cubre": "DNSKEY",
+       "alg": 13,
+       "tag": 6549,
+       "firmante": "caducada.test.",
+       "inicio": 1789100515,
+       "fin": 1791692515,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "KSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "expirada",
+       "dias_restantes": -10.0,
+       "firmante_ok": true,
+       "valida": false
+      },
+      {
+       "cubre": "DNSKEY",
+       "alg": 13,
+       "tag": 34578,
+       "firmante": "caducada.test.",
+       "inicio": 1789100515,
+       "fin": 1791692515,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "expirada",
+       "dias_restantes": -10.0,
+       "firmante_ok": true,
+       "valida": false
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "ns.caducada.test.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.150"
+     ],
+     "firmas": [
+      {
+       "cubre": "A",
+       "alg": 13,
+       "tag": 34578,
+       "firmante": "caducada.test.",
+       "inicio": 1789100515,
+       "fin": 1791692515,
+       "labels": 3,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "expirada",
+       "dias_restantes": -10.0,
+       "firmante_ok": true,
+       "valida": false
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "www.caducada.test.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.151"
+     ],
+     "firmas": [
+      {
+       "cubre": "A",
+       "alg": 13,
+       "tag": 34578,
+       "firmante": "caducada.test.",
+       "inicio": 1789100515,
+       "fin": 1791692515,
+       "labels": 3,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "expirada",
+       "dias_restantes": -10.0,
+       "firmante_ok": true,
+       "valida": false
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    }
+   ],
+   "soa": {
+    "mname": "ns.caducada.test.",
+    "rname": "admin.caducada.test.",
+    "serial": 2026102002,
+    "refresh": 3600,
+    "retry": 900,
+    "expire": 604800,
+    "minimum": 86400
+   },
+   "dnskey": [
+    {
+     "tag": 6549,
+     "flags": 257,
+     "uso": "KSK (SEP)",
+     "alg": 13,
+     "alg_nombre": "ECDSAP256SHA256",
+     "alg_estado": "AUTORIZADO",
+     "tipo_clave": "EC P-256",
+     "bits": 256,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": false,
+     "estado": "expirada",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:55Z",
+      "publish": "2026-10-21 04:21:55Z",
+      "activate": "2026-10-21 04:21:55Z"
+     },
+     "problemas": [],
+     "avisos": []
+    },
+    {
+     "tag": 34578,
+     "flags": 256,
+     "uso": "ZSK",
+     "alg": 13,
+     "alg_nombre": "ECDSAP256SHA256",
+     "alg_estado": "AUTORIZADO",
+     "tipo_clave": "EC P-256",
+     "bits": 256,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": true,
+     "estado": "expirada",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:55Z",
+      "publish": "2026-10-21 04:21:55Z",
+      "activate": "2026-10-21 04:21:55Z"
+     },
+     "problemas": [],
+     "avisos": []
+    }
+   ],
+   "denegacion": {
+    "modo": "NSEC",
+    "nsec3": null,
+    "nsec3param": null,
+    "avisos": [],
+    "nsec_ttl": 86400,
+    "nsec_ttl_ok": true,
+    "firmas_ok": false
+   },
+   "dnskey_rrset_firma": {
+    "ok": false,
+    "motivo": "RRSIG expirada",
+    "firmantes": []
+   },
+   "walk": {
+    "modo": "NSEC",
+    "nombres": [
+     {
+      "nombre": "caducada.test.",
+      "tipos": [
+       "NS",
+       "SOA",
+       "RRSIG",
+       "NSEC",
+       "DNSKEY"
+      ]
+     },
+     {
+      "nombre": "ns.caducada.test.",
+      "tipos": [
+       "A",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "www.caducada.test.",
+      "tipos": [
+       "A",
+       "RRSIG",
+       "NSEC"
+      ]
+     }
+    ],
+    "enumerada": true
+   },
+   "esperado": "BOGUS",
+   "coincide_esperado": true
+  },
+  "sinds.test.": {
+   "zona": "sinds.test.",
+   "cfg": {
+    "padre": "test.",
+    "ip": "172.30.0.160",
+    "esperado": "INSECURE",
+    "escenario": "sin_ds",
+    "nota": "zona firmada, pero el padre (test) NO publica su DS: isla de seguridad",
+    "alg": "ECDSAP256SHA256",
+    "nsec": "NSEC"
+   },
+   "hallazgos": [
+    [
+     "AVISO",
+     "isla de seguridad (zona firmada sin DS en el padre)"
+    ],
+    [
+     "AVISO",
+     "zone walking posible: NSEC reveló 3 nombres de la zona"
+    ]
+   ],
+   "ip": "172.30.0.160",
+   "firmada": true,
+   "estado": "INSECURE",
+   "razones": [
+    "delegación insegura DEMOSTRADA: NSEC3 firmado prueba que no existe DS",
+    "ISLA DE SEGURIDAD: la zona publica DNSKEY/RRSIG pero el padre no publica su DS; ningún validador confiará en ella"
+   ],
+   "enlace": {
+    "padre": "test.",
+    "hijo": "sinds.test.",
+    "ds": [],
+    "prueba_sin_ds": {
+     "tipo": "NSEC3",
+     "firmada": true,
+     "motivo": "ok"
+    },
+    "rfc": [
+     "RFC 4035 §5.2",
+     "RFC 5155 §8.9 (NSEC3)"
+    ]
+   },
+   "isla": true,
+   "rrsets": [
+    {
+     "nombre": "sinds.test.",
+     "tipo": "SOA",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.sinds.test. admin.sinds.test. 2026102002 3600 900 604800 86400"
+     ],
+     "firmas": [
+      {
+       "cubre": "SOA",
+       "alg": 13,
+       "tag": 22778,
+       "firmante": "sinds.test.",
+       "inicio": 1792552916,
+       "fin": 1795144916,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "sinds.test.",
+     "tipo": "NS",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.sinds.test."
+     ],
+     "firmas": [
+      {
+       "cubre": "NS",
+       "alg": 13,
+       "tag": 22778,
+       "firmante": "sinds.test.",
+       "inicio": 1792552916,
+       "fin": 1795144916,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "sinds.test.",
+     "tipo": "DNSKEY",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "257 3 13 QremlgQW9fHNrRloWiJH1FDwOupn96vQ z/sSI/iXV0gyFi8suuFleEDT9jay",
+      "256 3 13 lyXz9KwmeJ+VgAn8ZnfE6B2Bn05V3aLo RuuHvwL11NYtVAVHC2AcAEeDi39B"
+     ],
+     "firmas": [
+      {
+       "cubre": "DNSKEY",
+       "alg": 13,
+       "tag": 9502,
+       "firmante": "sinds.test.",
+       "inicio": 1792552916,
+       "fin": 1795144916,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "KSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      },
+      {
+       "cubre": "DNSKEY",
+       "alg": 13,
+       "tag": 22778,
+       "firmante": "sinds.test.",
+       "inicio": 1792552916,
+       "fin": 1795144916,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "ns.sinds.test.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.160"
+     ],
+     "firmas": [
+      {
+       "cubre": "A",
+       "alg": 13,
+       "tag": 22778,
+       "firmante": "sinds.test.",
+       "inicio": 1792552916,
+       "fin": 1795144916,
+       "labels": 3,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "www.sinds.test.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.161"
+     ],
+     "firmas": [
+      {
+       "cubre": "A",
+       "alg": 13,
+       "tag": 22778,
+       "firmante": "sinds.test.",
+       "inicio": 1792552916,
+       "fin": 1795144916,
+       "labels": 3,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    }
+   ],
+   "soa": {
+    "mname": "ns.sinds.test.",
+    "rname": "admin.sinds.test.",
+    "serial": 2026102002,
+    "refresh": 3600,
+    "retry": 900,
+    "expire": 604800,
+    "minimum": 86400
+   },
+   "dnskey": [
+    {
+     "tag": 9502,
+     "flags": 257,
+     "uso": "KSK (SEP)",
+     "alg": 13,
+     "alg_nombre": "ECDSAP256SHA256",
+     "alg_estado": "AUTORIZADO",
+     "tipo_clave": "EC P-256",
+     "bits": 256,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": false,
+     "estado": "válida",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:56Z",
+      "publish": "2026-10-21 04:21:56Z",
+      "activate": "2026-10-21 04:21:56Z"
+     },
+     "problemas": [],
+     "avisos": []
+    },
+    {
+     "tag": 22778,
+     "flags": 256,
+     "uso": "ZSK",
+     "alg": 13,
+     "alg_nombre": "ECDSAP256SHA256",
+     "alg_estado": "AUTORIZADO",
+     "tipo_clave": "EC P-256",
+     "bits": 256,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": true,
+     "estado": "válida",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:56Z",
+      "publish": "2026-10-21 04:21:56Z",
+      "activate": "2026-10-21 04:21:56Z"
+     },
+     "problemas": [],
+     "avisos": []
+    }
+   ],
+   "denegacion": {
+    "modo": "NSEC",
+    "nsec3": null,
+    "nsec3param": null,
+    "avisos": [],
+    "nsec_ttl": 86400,
+    "nsec_ttl_ok": true,
+    "firmas_ok": true
+   },
+   "dnskey_rrset_firma": {
+    "ok": true,
+    "motivo": "ok",
+    "firmantes": [
+     [
+      9502,
+      "KSK"
+     ],
+     [
+      22778,
+      "ZSK"
+     ]
+    ]
+   },
+   "walk": {
+    "modo": "NSEC",
+    "nombres": [
+     {
+      "nombre": "sinds.test.",
+      "tipos": [
+       "NS",
+       "SOA",
+       "RRSIG",
+       "NSEC",
+       "DNSKEY"
+      ]
+     },
+     {
+      "nombre": "ns.sinds.test.",
+      "tipos": [
+       "A",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "www.sinds.test.",
+      "tipos": [
+       "A",
+       "RRSIG",
+       "NSEC"
+      ]
+     }
+    ],
+    "enumerada": true
+   },
+   "esperado": "INSECURE",
+   "coincide_esperado": true
+  },
+  "algdebil.test.": {
+   "zona": "algdebil.test.",
+   "cfg": {
+    "padre": "test.",
+    "ip": "172.30.0.170",
+    "esperado": "SECURE",
+    "escenario": "alg_debil",
+    "nota": "RSA-SHA1 de 1024 bits y DS con digest SHA-1: algoritmos desaconsejados (RFC 8624)",
+    "alg": "RSASHA1",
+    "nsec": "NSEC"
+   },
+   "hallazgos": [
+    [
+     "AVISO",
+     "DNSKEY 9677: algoritmo RSASHA1 DESACONSEJADO (RFC 8624)"
+    ],
+    [
+     "AVISO",
+     "DNSKEY 9677: clave RSA de 1024 bits: se recomiendan >= 2048"
+    ],
+    [
+     "AVISO",
+     "DNSKEY 58830: algoritmo RSASHA1 DESACONSEJADO (RFC 8624)"
+    ],
+    [
+     "AVISO",
+     "DNSKEY 58830: clave RSA de 1024 bits: se recomiendan >= 2048"
+    ],
+    [
+     "AVISO",
+     "zone walking posible: NSEC reveló 3 nombres de la zona"
+    ]
+   ],
+   "ip": "172.30.0.170",
+   "firmada": true,
+   "estado": "SECURE",
+   "razones": [
+    "DS 9677 coincide con el DNSKEY y la firma del DNSKEY RRset es válida"
+   ],
+   "enlace": {
+    "padre": "test.",
+    "hijo": "algdebil.test.",
+    "ds": [
+     {
+      "tag": 9677,
+      "alg": 5,
+      "alg_nombre": "RSASHA1",
+      "digest_tipo": 1,
+      "digest_nombre": "SHA-1",
+      "digest_estado": "DESACONSEJADO",
+      "digest": "3BCF5A31E609C673FA5B64671C41F99295635C4B",
+      "coincide": true,
+      "clave_uso": "KSK"
+     }
+    ],
+    "prueba_sin_ds": null,
+    "rfc": [
+     "RFC 4034 §5 (DS)",
+     "RFC 4035 §5.2",
+     "RFC 4509 / RFC 6605",
+     "RFC 8624"
+    ],
+    "ds_ttl": 86400,
+    "ds_sigs": [
+     {
+      "cubre": "DS",
+      "alg": 14,
+      "tag": 40629,
+      "firmante": "test.",
+      "inicio": 1792552918,
+      "fin": 1795144918,
+      "labels": 2,
+      "ttl_orig": 86400,
+      "alg_nombre": "ECDSAP384SHA384",
+      "llave_presente": true,
+      "uso_llave": "ZSK",
+      "crypto": true,
+      "motivo": null,
+      "vigencia": "vigente",
+      "dias_restantes": 30.0,
+      "firmante_ok": true,
+      "valida": true
+     }
+    ]
+   },
+   "isla": false,
+   "rrsets": [
+    {
+     "nombre": "algdebil.test.",
+     "tipo": "SOA",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.algdebil.test. admin.algdebil.test. 2026102002 3600 900 604800 8640"
+     ],
+     "firmas": [
+      {
+       "cubre": "SOA",
+       "alg": 5,
+       "tag": 58830,
+       "firmante": "algdebil.test.",
+       "inicio": 1792552917,
+       "fin": 1795144917,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "RSASHA1",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "algdebil.test.",
+     "tipo": "NS",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.algdebil.test."
+     ],
+     "firmas": [
+      {
+       "cubre": "NS",
+       "alg": 5,
+       "tag": 58830,
+       "firmante": "algdebil.test.",
+       "inicio": 1792552917,
+       "fin": 1795144917,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "RSASHA1",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "algdebil.test.",
+     "tipo": "DNSKEY",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "257 3 5 AwEAAZkVK8AA2UnkcIwE+7+TtBCEx3wZ t3r1VT0Rkq+5sFHNvRdbMX56QWhik",
+      "256 3 5 AwEAAb6bHUBqap6Juvux9BSI6lpHXfZp j46U8YTUEMUYWi/T8QeGvqJOn45wS"
+     ],
+     "firmas": [
+      {
+       "cubre": "DNSKEY",
+       "alg": 5,
+       "tag": 9677,
+       "firmante": "algdebil.test.",
+       "inicio": 1792552917,
+       "fin": 1795144917,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "RSASHA1",
+       "llave_presente": true,
+       "uso_llave": "KSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      },
+      {
+       "cubre": "DNSKEY",
+       "alg": 5,
+       "tag": 58830,
+       "firmante": "algdebil.test.",
+       "inicio": 1792552917,
+       "fin": 1795144917,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "RSASHA1",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "ns.algdebil.test.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.170"
+     ],
+     "firmas": [
+      {
+       "cubre": "A",
+       "alg": 5,
+       "tag": 58830,
+       "firmante": "algdebil.test.",
+       "inicio": 1792552917,
+       "fin": 1795144917,
+       "labels": 3,
+       "ttl_orig": 86400,
+       "alg_nombre": "RSASHA1",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "www.algdebil.test.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.171"
+     ],
+     "firmas": [
+      {
+       "cubre": "A",
+       "alg": 5,
+       "tag": 58830,
+       "firmante": "algdebil.test.",
+       "inicio": 1792552917,
+       "fin": 1795144917,
+       "labels": 3,
+       "ttl_orig": 86400,
+       "alg_nombre": "RSASHA1",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    }
+   ],
+   "soa": {
+    "mname": "ns.algdebil.test.",
+    "rname": "admin.algdebil.test.",
+    "serial": 2026102002,
+    "refresh": 3600,
+    "retry": 900,
+    "expire": 604800,
+    "minimum": 86400
+   },
+   "dnskey": [
+    {
+     "tag": 9677,
+     "flags": 257,
+     "uso": "KSK (SEP)",
+     "alg": 5,
+     "alg_nombre": "RSASHA1",
+     "alg_estado": "DESACONSEJADO",
+     "tipo_clave": "RSA 1024 bits",
+     "bits": 1024,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": false,
+     "estado": "válida",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:56Z",
+      "publish": "2026-10-21 04:21:56Z",
+      "activate": "2026-10-21 04:21:56Z"
+     },
+     "problemas": [],
+     "avisos": [
+      "algoritmo RSASHA1 DESACONSEJADO (RFC 8624)",
+      "clave RSA de 1024 bits: se recomiendan >= 2048"
+     ]
+    },
+    {
+     "tag": 58830,
+     "flags": 256,
+     "uso": "ZSK",
+     "alg": 5,
+     "alg_nombre": "RSASHA1",
+     "alg_estado": "DESACONSEJADO",
+     "tipo_clave": "RSA 1024 bits",
+     "bits": 1024,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": true,
+     "estado": "válida",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:56Z",
+      "publish": "2026-10-21 04:21:56Z",
+      "activate": "2026-10-21 04:21:56Z"
+     },
+     "problemas": [],
+     "avisos": [
+      "algoritmo RSASHA1 DESACONSEJADO (RFC 8624)",
+      "clave RSA de 1024 bits: se recomiendan >= 2048"
+     ]
+    }
+   ],
+   "denegacion": {
+    "modo": "NSEC",
+    "nsec3": null,
+    "nsec3param": null,
+    "avisos": [],
+    "nsec_ttl": 86400,
+    "nsec_ttl_ok": true,
+    "firmas_ok": true
+   },
+   "dnskey_rrset_firma": {
+    "ok": true,
+    "motivo": "ok",
+    "firmantes": [
+     [
+      9677,
+      "KSK"
+     ],
+     [
+      58830,
+      "ZSK"
+     ]
+    ]
+   },
+   "walk": {
+    "modo": "NSEC",
+    "nombres": [
+     {
+      "nombre": "algdebil.test.",
+      "tipos": [
+       "NS",
+       "SOA",
+       "RRSIG",
+       "NSEC",
+       "DNSKEY"
+      ]
+     },
+     {
+      "nombre": "ns.algdebil.test.",
+      "tipos": [
+       "A",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "www.algdebil.test.",
+      "tipos": [
+       "A",
+       "RRSIG",
+       "NSEC"
+      ]
+     }
+    ],
+    "enumerada": true
+   },
+   "esperado": "SECURE",
+   "coincide_esperado": true
+  },
+  "alpha.unsigned.": {
+   "zona": "alpha.unsigned.",
+   "cfg": {
+    "padre": "unsigned.",
+    "ip": "172.30.0.30",
+    "esperado": "INSECURE",
+    "escenario": "ok",
+    "nota": "Actividad 2",
+    "alg": null,
+    "nsec": null
+   },
+   "hallazgos": [],
+   "ip": "172.30.0.30",
+   "firmada": false,
+   "estado": "INSECURE",
+   "razones": [
+    "el padre unsigned. ya es INSECURE: la inseguridad se hereda"
+   ],
+   "enlace": {
+    "padre": "unsigned.",
+    "hijo": "alpha.unsigned.",
+    "ds": [],
+    "prueba_sin_ds": null,
+    "rfc": [
+     "RFC 4035 §5.2",
+     "RFC 5155 §8.9 (NSEC3)"
+    ]
+   },
+   "isla": false,
+   "rrsets": [
+    {
+     "nombre": "alpha.unsigned.",
+     "tipo": "SOA",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.alpha.unsigned. admin.alpha.unsigned. 2026100601 3600 900 604800 86"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "alpha.unsigned.",
+     "tipo": "NS",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.alpha.unsigned."
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "ns.alpha.unsigned.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.30"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "www.alpha.unsigned.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.35"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    }
+   ],
+   "soa": {
+    "mname": "ns.alpha.unsigned.",
+    "rname": "admin.alpha.unsigned.",
+    "serial": 2026100601,
+    "refresh": 3600,
+    "retry": 900,
+    "expire": 604800,
+    "minimum": 86400
+   },
+   "dnskey": [],
+   "denegacion": {
+    "modo": "ninguno",
+    "nsec3": null,
+    "nsec3param": null,
+    "avisos": [],
+    "nsec_ttl": null,
+    "nsec_ttl_ok": null,
+    "firmas_ok": null
+   },
+   "walk": null,
+   "esperado": "INSECURE",
+   "coincide_esperado": true
+  },
+  "beta.signed.": {
+   "zona": "beta.signed.",
+   "cfg": {
+    "padre": "signed.",
+    "ip": "172.30.0.50",
+    "esperado": "SECURE",
+    "escenario": "ok",
+    "nota": "firmado (ECDSA P-256, NSEC)",
+    "alg": "ECDSAP256SHA256",
+    "nsec": "NSEC"
+   },
+   "hallazgos": [
+    [
+     "AVISO",
+     "zone walking posible: NSEC reveló 3 nombres de la zona"
+    ]
+   ],
+   "ip": "172.30.0.50",
+   "firmada": true,
+   "estado": "SECURE",
+   "razones": [
+    "DS 26439 coincide con el DNSKEY y la firma del DNSKEY RRset es válida"
+   ],
+   "enlace": {
+    "padre": "signed.",
+    "hijo": "beta.signed.",
+    "ds": [
+     {
+      "tag": 26439,
+      "alg": 13,
+      "alg_nombre": "ECDSAP256SHA256",
+      "digest_tipo": 2,
+      "digest_nombre": "SHA-256",
+      "digest_estado": "AUTORIZADO",
+      "digest": "E9B072DEBF820B940E79EB63AA0FC93AEBB8FA97B3B8783D913E010F46AADDDB",
+      "coincide": true,
+      "clave_uso": "KSK"
+     }
+    ],
+    "prueba_sin_ds": null,
+    "rfc": [
+     "RFC 4034 §5 (DS)",
+     "RFC 4035 §5.2",
+     "RFC 4509 / RFC 6605",
+     "RFC 8624"
+    ],
+    "ds_ttl": 86400,
+    "ds_sigs": [
+     {
+      "cubre": "DS",
+      "alg": 13,
+      "tag": 55960,
+      "firmante": "signed.",
+      "inicio": 1792552917,
+      "fin": 1795144917,
+      "labels": 2,
+      "ttl_orig": 86400,
+      "alg_nombre": "ECDSAP256SHA256",
+      "llave_presente": true,
+      "uso_llave": "ZSK",
+      "crypto": true,
+      "motivo": null,
+      "vigencia": "vigente",
+      "dias_restantes": 30.0,
+      "firmante_ok": true,
+      "valida": true
+     }
+    ]
+   },
+   "isla": false,
+   "rrsets": [
+    {
+     "nombre": "beta.signed.",
+     "tipo": "SOA",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.beta.signed. admin.beta.signed. 2026101302 3600 900 604800 86400"
+     ],
+     "firmas": [
+      {
+       "cubre": "SOA",
+       "alg": 13,
+       "tag": 40028,
+       "firmante": "beta.signed.",
+       "inicio": 1792552913,
+       "fin": 1795144913,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "beta.signed.",
+     "tipo": "NS",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.beta.signed."
+     ],
+     "firmas": [
+      {
+       "cubre": "NS",
+       "alg": 13,
+       "tag": 40028,
+       "firmante": "beta.signed.",
+       "inicio": 1792552913,
+       "fin": 1795144913,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "beta.signed.",
+     "tipo": "DNSKEY",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "256 3 13 A3ByZ473Kz5b81sqRVRWN84TXZRZZfND qc+186iEkvzA2Y2MT/UI4Hp7pcPf",
+      "257 3 13 li/3+A0q44NehZDGYrOZYvAWIEolawRz Yo7nGdzXkh4ZEKDps8KsVkPlljGs"
+     ],
+     "firmas": [
+      {
+       "cubre": "DNSKEY",
+       "alg": 13,
+       "tag": 26439,
+       "firmante": "beta.signed.",
+       "inicio": 1792552913,
+       "fin": 1795144913,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "KSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      },
+      {
+       "cubre": "DNSKEY",
+       "alg": 13,
+       "tag": 40028,
+       "firmante": "beta.signed.",
+       "inicio": 1792552913,
+       "fin": 1795144913,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "ns.beta.signed.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.50"
+     ],
+     "firmas": [
+      {
+       "cubre": "A",
+       "alg": 13,
+       "tag": 40028,
+       "firmante": "beta.signed.",
+       "inicio": 1792552913,
+       "fin": 1795144913,
+       "labels": 3,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "www.beta.signed.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.51"
+     ],
+     "firmas": [
+      {
+       "cubre": "A",
+       "alg": 13,
+       "tag": 40028,
+       "firmante": "beta.signed.",
+       "inicio": 1792552913,
+       "fin": 1795144913,
+       "labels": 3,
+       "ttl_orig": 86400,
+       "alg_nombre": "ECDSAP256SHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    }
+   ],
+   "soa": {
+    "mname": "ns.beta.signed.",
+    "rname": "admin.beta.signed.",
+    "serial": 2026101302,
+    "refresh": 3600,
+    "retry": 900,
+    "expire": 604800,
+    "minimum": 86400
+   },
+   "dnskey": [
+    {
+     "tag": 40028,
+     "flags": 256,
+     "uso": "ZSK",
+     "alg": 13,
+     "alg_nombre": "ECDSAP256SHA256",
+     "alg_estado": "AUTORIZADO",
+     "tipo_clave": "EC P-256",
+     "bits": 256,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": true,
+     "estado": "válida",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:53Z",
+      "publish": "2026-10-21 04:21:53Z",
+      "activate": "2026-10-21 04:21:53Z"
+     },
+     "problemas": [],
+     "avisos": []
+    },
+    {
+     "tag": 26439,
+     "flags": 257,
+     "uso": "KSK (SEP)",
+     "alg": 13,
+     "alg_nombre": "ECDSAP256SHA256",
+     "alg_estado": "AUTORIZADO",
+     "tipo_clave": "EC P-256",
+     "bits": 256,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": false,
+     "estado": "válida",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:53Z",
+      "publish": "2026-10-21 04:21:53Z",
+      "activate": "2026-10-21 04:21:53Z"
+     },
+     "problemas": [],
+     "avisos": []
+    }
+   ],
+   "denegacion": {
+    "modo": "NSEC",
+    "nsec3": null,
+    "nsec3param": null,
+    "avisos": [],
+    "nsec_ttl": 86400,
+    "nsec_ttl_ok": true,
+    "firmas_ok": true
+   },
+   "dnskey_rrset_firma": {
+    "ok": true,
+    "motivo": "ok",
+    "firmantes": [
+     [
+      26439,
+      "KSK"
+     ],
+     [
+      40028,
+      "ZSK"
+     ]
+    ]
+   },
+   "walk": {
+    "modo": "NSEC",
+    "nombres": [
+     {
+      "nombre": "beta.signed.",
+      "tipos": [
+       "NS",
+       "SOA",
+       "RRSIG",
+       "NSEC",
+       "DNSKEY"
+      ]
+     },
+     {
+      "nombre": "ns.beta.signed.",
+      "tipos": [
+       "A",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "www.beta.signed.",
+      "tipos": [
+       "A",
+       "RRSIG",
+       "NSEC"
+      ]
+     }
+    ],
+    "enumerada": true
+   },
+   "esperado": "SECURE",
+   "coincide_esperado": true
+  },
+  "gamma.signed.": {
+   "zona": "gamma.signed.",
+   "cfg": {
+    "padre": "signed.",
+    "ip": "172.30.0.60",
+    "esperado": "INSECURE",
+    "escenario": "ok",
+    "nota": "sin firmar (delegación insegura)",
+    "alg": null,
+    "nsec": null
+   },
+   "hallazgos": [],
+   "ip": "172.30.0.60",
+   "firmada": false,
+   "estado": "INSECURE",
+   "razones": [
+    "delegación insegura DEMOSTRADA: NSEC firmado prueba que no existe DS"
+   ],
+   "enlace": {
+    "padre": "signed.",
+    "hijo": "gamma.signed.",
+    "ds": [],
+    "prueba_sin_ds": {
+     "tipo": "NSEC",
+     "firmada": true,
+     "motivo": "ok"
+    },
+    "rfc": [
+     "RFC 4035 §5.2",
+     "RFC 5155 §8.9 (NSEC3)"
+    ]
+   },
+   "isla": false,
+   "rrsets": [
+    {
+     "nombre": "gamma.signed.",
+     "tipo": "SOA",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.gamma.signed. admin.gamma.signed. 2026101301 3600 900 604800 86400"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "gamma.signed.",
+     "tipo": "NS",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.gamma.signed."
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "ns.gamma.signed.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.60"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    },
+    {
+     "nombre": "www.gamma.signed.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.61"
+     ],
+     "firmas": [],
+     "firmado": false,
+     "ttl_orig_ok": null
+    }
+   ],
+   "soa": {
+    "mname": "ns.gamma.signed.",
+    "rname": "admin.gamma.signed.",
+    "serial": 2026101301,
+    "refresh": 3600,
+    "retry": 900,
+    "expire": 604800,
+    "minimum": 86400
+   },
+   "dnskey": [],
+   "denegacion": {
+    "modo": "ninguno",
+    "nsec3": null,
+    "nsec3param": null,
+    "avisos": [],
+    "nsec_ttl": null,
+    "nsec_ttl_ok": null,
+    "firmas_ok": null
+   },
+   "walk": null,
+   "esperado": "INSECURE",
+   "coincide_esperado": true
+  },
+  "delta.signed.": {
+   "zona": "delta.signed.",
+   "cfg": {
+    "padre": "signed.",
+    "ip": "172.30.0.80",
+    "esperado": "SECURE",
+    "escenario": "ok",
+    "nota": "firmado (RSA-SHA256 2048, NSEC3 con sal e iteraciones; contraste con epsilon)",
+    "alg": "RSASHA256",
+    "nsec": "NSEC3"
+   },
+   "hallazgos": [
+    [
+     "AVISO",
+     "NSEC3 con 5 iteraciones: RFC 9276 exige 0 (más CPU, sin ganancia real; BIND/Unbound tratan >50/150 como inseguro)"
+    ],
+    [
+     "AVISO",
+     "NSEC3 con sal: RFC 9276 recomienda sal vacía (no aporta protección)"
+    ],
+    [
+     "INFO",
+     "NSEC3 impide el recorrido directo, pero un diccionario recuperó 7 nombres"
+    ]
+   ],
+   "ip": "172.30.0.80",
+   "firmada": true,
+   "estado": "SECURE",
+   "razones": [
+    "DS 32411 coincide con el DNSKEY y la firma del DNSKEY RRset es válida"
+   ],
+   "enlace": {
+    "padre": "signed.",
+    "hijo": "delta.signed.",
+    "ds": [
+     {
+      "tag": 32411,
+      "alg": 8,
+      "alg_nombre": "RSASHA256",
+      "digest_tipo": 2,
+      "digest_nombre": "SHA-256",
+      "digest_estado": "AUTORIZADO",
+      "digest": "04DE0594F7CD910DCC0C93C8A34A8C45E1E691DE4228D7D9712EEA4D17805762",
+      "coincide": true,
+      "clave_uso": "KSK"
+     }
+    ],
+    "prueba_sin_ds": null,
+    "rfc": [
+     "RFC 4034 §5 (DS)",
+     "RFC 4035 §5.2",
+     "RFC 4509 / RFC 6605",
+     "RFC 8624"
+    ],
+    "ds_ttl": 86400,
+    "ds_sigs": [
+     {
+      "cubre": "DS",
+      "alg": 13,
+      "tag": 55960,
+      "firmante": "signed.",
+      "inicio": 1792552917,
+      "fin": 1795144917,
+      "labels": 2,
+      "ttl_orig": 86400,
+      "alg_nombre": "ECDSAP256SHA256",
+      "llave_presente": true,
+      "uso_llave": "ZSK",
+      "crypto": true,
+      "motivo": null,
+      "vigencia": "vigente",
+      "dias_restantes": 30.0,
+      "firmante_ok": true,
+      "valida": true
+     }
+    ]
+   },
+   "isla": false,
+   "rrsets": [
+    {
+     "nombre": "delta.signed.",
+     "tipo": "SOA",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.delta.signed. admin.delta.signed. 2026102002 3600 900 604800 86400"
+     ],
+     "firmas": [
+      {
+       "cubre": "SOA",
+       "alg": 8,
+       "tag": 10893,
+       "firmante": "delta.signed.",
+       "inicio": 1792552914,
+       "fin": 1795144914,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "RSASHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "delta.signed.",
+     "tipo": "NS",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.delta.signed."
+     ],
+     "firmas": [
+      {
+       "cubre": "NS",
+       "alg": 8,
+       "tag": 10893,
+       "firmante": "delta.signed.",
+       "inicio": 1792552914,
+       "fin": 1795144914,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "RSASHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "delta.signed.",
+     "tipo": "DNSKEY",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "257 3 8 AwEAAcGgU2V5/dG0Kfxsr6UaPeA53UlV EfbsQiwxWEieJjKe8zbbegaypcEA8",
+      "256 3 8 AwEAAah7yQs3q9QHhtdRWpj5np3aCX68 Ex2VE4k0e7nf7JFPNs5Fg+AAss5lX"
+     ],
+     "firmas": [
+      {
+       "cubre": "DNSKEY",
+       "alg": 8,
+       "tag": 10893,
+       "firmante": "delta.signed.",
+       "inicio": 1792552914,
+       "fin": 1795144914,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "RSASHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      },
+      {
+       "cubre": "DNSKEY",
+       "alg": 8,
+       "tag": 32411,
+       "firmante": "delta.signed.",
+       "inicio": 1792552914,
+       "fin": 1795144914,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "RSASHA256",
+       "llave_presente": true,
+       "uso_llave": "KSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "ns.delta.signed.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.80"
+     ],
+     "firmas": [
+      {
+       "cubre": "A",
+       "alg": 8,
+       "tag": 10893,
+       "firmante": "delta.signed.",
+       "inicio": 1792552914,
+       "fin": 1795144914,
+       "labels": 3,
+       "ttl_orig": 86400,
+       "alg_nombre": "RSASHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "www.delta.signed.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.81"
+     ],
+     "firmas": [
+      {
+       "cubre": "A",
+       "alg": 8,
+       "tag": 10893,
+       "firmante": "delta.signed.",
+       "inicio": 1792552914,
+       "fin": 1795144914,
+       "labels": 3,
+       "ttl_orig": 86400,
+       "alg_nombre": "RSASHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "delta.signed.",
+     "tipo": "NSEC3PARAM",
+     "ttl_obs": 0,
+     "ttl_esp": 0,
+     "ttl_ok": true,
+     "datos": [
+      "1 0 5 aabbccdd"
+     ],
+     "firmas": [
+      {
+       "cubre": "NSEC3PARAM",
+       "alg": 8,
+       "tag": 10893,
+       "firmante": "delta.signed.",
+       "inicio": 1792552914,
+       "fin": 1795144914,
+       "labels": 2,
+       "ttl_orig": 0,
+       "alg_nombre": "RSASHA256",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    }
+   ],
+   "soa": {
+    "mname": "ns.delta.signed.",
+    "rname": "admin.delta.signed.",
+    "serial": 2026102002,
+    "refresh": 3600,
+    "retry": 900,
+    "expire": 604800,
+    "minimum": 86400
+   },
+   "dnskey": [
+    {
+     "tag": 32411,
+     "flags": 257,
+     "uso": "KSK (SEP)",
+     "alg": 8,
+     "alg_nombre": "RSASHA256",
+     "alg_estado": "AUTORIZADO",
+     "tipo_clave": "RSA 2048 bits",
+     "bits": 2048,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": false,
+     "estado": "válida",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:54Z",
+      "publish": "2026-10-21 04:21:54Z",
+      "activate": "2026-10-21 04:21:54Z"
+     },
+     "problemas": [],
+     "avisos": []
+    },
+    {
+     "tag": 10893,
+     "flags": 256,
+     "uso": "ZSK",
+     "alg": 8,
+     "alg_nombre": "RSASHA256",
+     "alg_estado": "AUTORIZADO",
+     "tipo_clave": "RSA 2048 bits",
+     "bits": 2048,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": true,
+     "estado": "válida",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:54Z",
+      "publish": "2026-10-21 04:21:54Z",
+      "activate": "2026-10-21 04:21:54Z"
+     },
+     "problemas": [],
+     "avisos": []
+    }
+   ],
+   "denegacion": {
+    "modo": "NSEC3",
+    "nsec3": {
+     "alg": 1,
+     "flags": 0,
+     "optout": false,
+     "iteraciones": 5,
+     "sal": "AABBCCDD"
+    },
+    "nsec3param": {
+     "alg": 1,
+     "flags": 0,
+     "iteraciones": 5,
+     "sal": "AABBCCDD"
+    },
+    "avisos": [
+     "NSEC3 con 5 iteraciones: RFC 9276 exige 0 (más CPU, sin ganancia real; BIND/Unbound tratan >50/150 como inseguro)",
+     "NSEC3 con sal: RFC 9276 recomienda sal vacía (no aporta protección)"
+    ],
+    "nsec_ttl": 86400,
+    "nsec_ttl_ok": true,
+    "firmas_ok": true
+   },
+   "dnskey_rrset_firma": {
+    "ok": true,
+    "motivo": "ok",
+    "firmantes": [
+     [
+      10893,
+      "ZSK"
+     ],
+     [
+      32411,
+      "KSK"
+     ]
+    ]
+   },
+   "walk": {
+    "modo": "NSEC3",
+    "nombres": [],
+    "enumerada": false,
+    "nsec3": {
+     "hashes_unicos": 8,
+     "cadena_cerrada": true,
+     "recuperados": [
+      {
+       "nombre": "www.delta.signed.",
+       "hash": "4S7V07P0H5A4R9NMROCMMHV95E6S6FOU",
+       "tipos": [
+        "A",
+        "RRSIG"
+       ]
+      },
+      {
+       "nombre": "ns.delta.signed.",
+       "hash": "TFSIC6FUML5QR0CSJAS99NO1EDVBPG0F",
+       "tipos": [
+        "A",
+        "RRSIG"
+       ]
+      },
+      {
+       "nombre": "mail.delta.signed.",
+       "hash": "SIEOQ58GIT4Q1P98VM1ACL6698BH1VQQ",
+       "tipos": [
+        "A",
+        "RRSIG"
+       ]
+      },
+      {
+       "nombre": "vpn.delta.signed.",
+       "hash": "STJKGILAMJRHO9038OC8S9M4L4KO5HF9",
+       "tipos": [
+        "A",
+        "RRSIG"
+       ]
+      },
+      {
+       "nombre": "admin.delta.signed.",
+       "hash": "TMP9CDAKHSVAJCGI2OFKPHKSF6NVGD14",
+       "tipos": [
+        "A",
+        "RRSIG"
+       ]
+      },
+      {
+       "nombre": "intranet.delta.signed.",
+       "hash": "SNJUI1BLGC75T74U3PAH274VEN7V70GE",
+       "tipos": [
+        "A",
+        "RRSIG"
+       ]
+      },
+      {
+       "nombre": "delta.signed.",
+       "hash": "UA21P2SPC0C6CUVI3TUE6O8TPJH1JMDP",
+       "tipos": [
+        "NS",
+        "SOA",
+        "RRSIG",
+        "DNSKEY",
+        "NSEC3PARAM"
+       ]
+      }
+     ],
+     "sondas": 13,
+     "diccionario": 35,
+     "no_recuperados": 1
+    }
+   },
+   "esperado": "SECURE",
+   "coincide_esperado": true
+  },
+  "epsilon.signed.": {
+   "zona": "epsilon.signed.",
+   "cfg": {
+    "padre": "signed.",
+    "ip": "172.30.0.90",
+    "esperado": "SECURE",
+    "escenario": "ok",
+    "nota": "firmado (Ed25519, NSEC; mismo contenido que delta para comparar zone walking)",
+    "alg": "ED25519",
+    "nsec": "NSEC"
+   },
+   "hallazgos": [
+    [
+     "AVISO",
+     "zone walking posible: NSEC reveló 8 nombres de la zona"
+    ]
+   ],
+   "ip": "172.30.0.90",
+   "firmada": true,
+   "estado": "SECURE",
+   "razones": [
+    "DS 38700 coincide con el DNSKEY y la firma del DNSKEY RRset es válida"
+   ],
+   "enlace": {
+    "padre": "signed.",
+    "hijo": "epsilon.signed.",
+    "ds": [
+     {
+      "tag": 38700,
+      "alg": 15,
+      "alg_nombre": "ED25519",
+      "digest_tipo": 2,
+      "digest_nombre": "SHA-256",
+      "digest_estado": "AUTORIZADO",
+      "digest": "9948D0C6F554A0A62126C0C58392D7B4EA887E79A88C6F8DA991B93770DEF89B",
+      "coincide": true,
+      "clave_uso": "KSK"
+     }
+    ],
+    "prueba_sin_ds": null,
+    "rfc": [
+     "RFC 4034 §5 (DS)",
+     "RFC 4035 §5.2",
+     "RFC 4509 / RFC 6605",
+     "RFC 8624"
+    ],
+    "ds_ttl": 86400,
+    "ds_sigs": [
+     {
+      "cubre": "DS",
+      "alg": 13,
+      "tag": 55960,
+      "firmante": "signed.",
+      "inicio": 1792552917,
+      "fin": 1795144917,
+      "labels": 2,
+      "ttl_orig": 86400,
+      "alg_nombre": "ECDSAP256SHA256",
+      "llave_presente": true,
+      "uso_llave": "ZSK",
+      "crypto": true,
+      "motivo": null,
+      "vigencia": "vigente",
+      "dias_restantes": 30.0,
+      "firmante_ok": true,
+      "valida": true
+     }
+    ]
+   },
+   "isla": false,
+   "rrsets": [
+    {
+     "nombre": "epsilon.signed.",
+     "tipo": "SOA",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.epsilon.signed. admin.epsilon.signed. 2026102002 3600 900 604800 86"
+     ],
+     "firmas": [
+      {
+       "cubre": "SOA",
+       "alg": 15,
+       "tag": 39454,
+       "firmante": "epsilon.signed.",
+       "inicio": 1792552915,
+       "fin": 1795144915,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ED25519",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "epsilon.signed.",
+     "tipo": "NS",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "ns.epsilon.signed."
+     ],
+     "firmas": [
+      {
+       "cubre": "NS",
+       "alg": 15,
+       "tag": 39454,
+       "firmante": "epsilon.signed.",
+       "inicio": 1792552915,
+       "fin": 1795144915,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ED25519",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "epsilon.signed.",
+     "tipo": "DNSKEY",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "257 3 15 RsurvbUYzbvH2uxTTLj/jJHvsfmulyRO wqz1TNtycw8=",
+      "256 3 15 vou81Ln3M3f918ocMRDB/WXishUxqWTW 7njiogcV65Q="
+     ],
+     "firmas": [
+      {
+       "cubre": "DNSKEY",
+       "alg": 15,
+       "tag": 38700,
+       "firmante": "epsilon.signed.",
+       "inicio": 1792552915,
+       "fin": 1795144915,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ED25519",
+       "llave_presente": true,
+       "uso_llave": "KSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      },
+      {
+       "cubre": "DNSKEY",
+       "alg": 15,
+       "tag": 39454,
+       "firmante": "epsilon.signed.",
+       "inicio": 1792552915,
+       "fin": 1795144915,
+       "labels": 2,
+       "ttl_orig": 86400,
+       "alg_nombre": "ED25519",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "ns.epsilon.signed.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.90"
+     ],
+     "firmas": [
+      {
+       "cubre": "A",
+       "alg": 15,
+       "tag": 39454,
+       "firmante": "epsilon.signed.",
+       "inicio": 1792552915,
+       "fin": 1795144915,
+       "labels": 3,
+       "ttl_orig": 86400,
+       "alg_nombre": "ED25519",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    },
+    {
+     "nombre": "www.epsilon.signed.",
+     "tipo": "A",
+     "ttl_obs": 86400,
+     "ttl_esp": 86400,
+     "ttl_ok": true,
+     "datos": [
+      "172.30.0.91"
+     ],
+     "firmas": [
+      {
+       "cubre": "A",
+       "alg": 15,
+       "tag": 39454,
+       "firmante": "epsilon.signed.",
+       "inicio": 1792552915,
+       "fin": 1795144915,
+       "labels": 3,
+       "ttl_orig": 86400,
+       "alg_nombre": "ED25519",
+       "llave_presente": true,
+       "uso_llave": "ZSK",
+       "crypto": true,
+       "motivo": null,
+       "vigencia": "vigente",
+       "dias_restantes": 30.0,
+       "firmante_ok": true,
+       "valida": true
+      }
+     ],
+     "firmado": true,
+     "ttl_orig_ok": true
+    }
+   ],
+   "soa": {
+    "mname": "ns.epsilon.signed.",
+    "rname": "admin.epsilon.signed.",
+    "serial": 2026102002,
+    "refresh": 3600,
+    "retry": 900,
+    "expire": 604800,
+    "minimum": 86400
+   },
+   "dnskey": [
+    {
+     "tag": 38700,
+     "flags": 257,
+     "uso": "KSK (SEP)",
+     "alg": 15,
+     "alg_nombre": "ED25519",
+     "alg_estado": "AUTORIZADO",
+     "tipo_clave": "EC Ed25519",
+     "bits": 256,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": false,
+     "estado": "válida",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:54Z",
+      "publish": "2026-10-21 04:21:54Z",
+      "activate": "2026-10-21 04:21:54Z"
+     },
+     "problemas": [],
+     "avisos": []
+    },
+    {
+     "tag": 39454,
+     "flags": 256,
+     "uso": "ZSK",
+     "alg": 15,
+     "alg_nombre": "ED25519",
+     "alg_estado": "AUTORIZADO",
+     "tipo_clave": "EC Ed25519",
+     "bits": 256,
+     "protocolo": 3,
+     "revocada": false,
+     "firma_dnskey": true,
+     "firma_datos": true,
+     "estado": "válida",
+     "ciclo_vida": {
+      "estado": "activa",
+      "created": "2026-10-21 04:21:54Z",
+      "publish": "2026-10-21 04:21:54Z",
+      "activate": "2026-10-21 04:21:54Z"
+     },
+     "problemas": [],
+     "avisos": []
+    }
+   ],
+   "denegacion": {
+    "modo": "NSEC",
+    "nsec3": null,
+    "nsec3param": null,
+    "avisos": [],
+    "nsec_ttl": 86400,
+    "nsec_ttl_ok": true,
+    "firmas_ok": true
+   },
+   "dnskey_rrset_firma": {
+    "ok": true,
+    "motivo": "ok",
+    "firmantes": [
+     [
+      38700,
+      "KSK"
+     ],
+     [
+      39454,
+      "ZSK"
+     ]
+    ]
+   },
+   "walk": {
+    "modo": "NSEC",
+    "nombres": [
+     {
+      "nombre": "epsilon.signed.",
+      "tipos": [
+       "NS",
+       "SOA",
+       "RRSIG",
+       "NSEC",
+       "DNSKEY"
+      ]
+     },
+     {
+      "nombre": "admin.epsilon.signed.",
+      "tipos": [
+       "A",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "intranet.epsilon.signed.",
+      "tipos": [
+       "A",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "mail.epsilon.signed.",
+      "tipos": [
+       "A",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "ns.epsilon.signed.",
+      "tipos": [
+       "A",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "vpn.epsilon.signed.",
+      "tipos": [
+       "A",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "www.epsilon.signed.",
+      "tipos": [
+       "A",
+       "RRSIG",
+       "NSEC"
+      ]
+     },
+     {
+      "nombre": "zq8x41.epsilon.signed.",
+      "tipos": [
+       "A",
+       "RRSIG",
+       "NSEC"
+      ]
+     }
+    ],
+    "enumerada": true
+   },
+   "esperado": "SECURE",
+   "coincide_esperado": true
+  }
+ },
+ "comparacion_recursivos": [
+  {
+   "zona": ".",
+   "consulta": ". SOA",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 2
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": true,
+     "ede": [],
+     "respuestas": 2
+    }
+   }
+  },
+  {
+   "zona": "unsigned.",
+   "consulta": "unsigned. SOA",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    }
+   }
+  },
+  {
+   "zona": "signed.",
+   "consulta": "signed. SOA",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 2
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": true,
+     "ede": [],
+     "respuestas": 2
+    }
+   }
+  },
+  {
+   "zona": "test.",
+   "consulta": "test. SOA",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 2
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": true,
+     "ede": [],
+     "respuestas": 2
+    }
+   }
+  },
+  {
+   "zona": "zeta.signed.",
+   "consulta": "zeta.signed. SOA",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    }
+   }
+  },
+  {
+   "zona": "zeta.signed.",
+   "consulta": "www.zeta.signed. A",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    }
+   }
+  },
+  {
+   "zona": "eta.unsigned.",
+   "consulta": "eta.unsigned. SOA",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    }
+   }
+  },
+  {
+   "zona": "eta.unsigned.",
+   "consulta": "www.eta.unsigned. A",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    }
+   }
+  },
+  {
+   "zona": "theta.unsigned.",
+   "consulta": "theta.unsigned. SOA",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    }
+   }
+  },
+  {
+   "zona": "theta.unsigned.",
+   "consulta": "www.theta.unsigned. A",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    }
+   }
+  },
+  {
+   "zona": "iota.unsigned.",
+   "consulta": "iota.unsigned. SOA",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    }
+   }
+  },
+  {
+   "zona": "iota.unsigned.",
+   "consulta": "www.iota.unsigned. A",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    }
+   }
+  },
+  {
+   "zona": "caducada.test.",
+   "consulta": "caducada.test. SOA",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 2
+    },
+    "172.30.0.101": {
+     "rcode": "SERVFAIL",
+     "ad": false,
+     "ede": [
+      "7 Signature Expired"
+     ],
+     "respuestas": 0
+    }
+   }
+  },
+  {
+   "zona": "caducada.test.",
+   "consulta": "www.caducada.test. A",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 2
+    },
+    "172.30.0.101": {
+     "rcode": "SERVFAIL",
+     "ad": false,
+     "ede": [
+      "7 Signature Expired"
+     ],
+     "respuestas": 0
+    }
+   }
+  },
+  {
+   "zona": "sinds.test.",
+   "consulta": "sinds.test. SOA",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 2
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 2
+    }
+   }
+  },
+  {
+   "zona": "sinds.test.",
+   "consulta": "www.sinds.test. A",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 2
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 2
+    }
+   }
+  },
+  {
+   "zona": "algdebil.test.",
+   "consulta": "algdebil.test. SOA",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 2
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": true,
+     "ede": [],
+     "respuestas": 2
+    }
+   }
+  },
+  {
+   "zona": "algdebil.test.",
+   "consulta": "www.algdebil.test. A",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 2
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": true,
+     "ede": [],
+     "respuestas": 2
+    }
+   }
+  },
+  {
+   "zona": "alpha.unsigned.",
+   "consulta": "alpha.unsigned. SOA",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    }
+   }
+  },
+  {
+   "zona": "alpha.unsigned.",
+   "consulta": "www.alpha.unsigned. A",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    }
+   }
+  },
+  {
+   "zona": "beta.signed.",
+   "consulta": "beta.signed. SOA",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 2
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": true,
+     "ede": [],
+     "respuestas": 2
+    }
+   }
+  },
+  {
+   "zona": "beta.signed.",
+   "consulta": "www.beta.signed. A",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 2
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": true,
+     "ede": [],
+     "respuestas": 2
+    }
+   }
+  },
+  {
+   "zona": "gamma.signed.",
+   "consulta": "gamma.signed. SOA",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    }
+   }
+  },
+  {
+   "zona": "gamma.signed.",
+   "consulta": "www.gamma.signed. A",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 1
+    }
+   }
+  },
+  {
+   "zona": "delta.signed.",
+   "consulta": "delta.signed. SOA",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 2
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": true,
+     "ede": [],
+     "respuestas": 2
+    }
+   }
+  },
+  {
+   "zona": "delta.signed.",
+   "consulta": "www.delta.signed. A",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 2
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": true,
+     "ede": [],
+     "respuestas": 2
+    }
+   }
+  },
+  {
+   "zona": "epsilon.signed.",
+   "consulta": "epsilon.signed. SOA",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 2
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": true,
+     "ede": [],
+     "respuestas": 2
+    }
+   }
+  },
+  {
+   "zona": "epsilon.signed.",
+   "consulta": "www.epsilon.signed. A",
+   "resultados": {
+    "172.30.0.100": {
+     "rcode": "NOERROR",
+     "ad": false,
+     "ede": [],
+     "respuestas": 2
+    },
+    "172.30.0.101": {
+     "rcode": "NOERROR",
+     "ad": true,
+     "ede": [],
+     "respuestas": 2
+    }
+   }
+  }
+ ],
+ "metricas": {
+  "zonas_total": 16,
+  "zonas_secure": 7,
+  "zonas_insecure": 8,
+  "zonas_bogus": 1,
+  "zonas_indeterminate": 0,
+  "zonas_no_disponible": 0,
+  "zonas_firmadas": 9,
+  "islas_de_seguridad": 1,
+  "coinciden_con_diseno": 16,
+  "dnskeys_total": 18,
+  "algoritmos": {
+   "ECDSAP256SHA256 (AUTORIZADO)": 10,
+   "ECDSAP384SHA384 (AUTORIZADO)": 2,
+   "RSASHA1 (DESACONSEJADO)": 2,
+   "RSASHA256 (AUTORIZADO)": 2,
+   "ED25519 (AUTORIZADO)": 2
+  },
+  "denegacion": {
+   "NSEC": 7,
+   "NSEC3": 2
+  },
+  "rrsets_ttl_evaluados": 62,
+  "rrsets_ttl_consistentes": 62,
+  "rrsig_dias_min": -10.0,
+  "rrsig_dias_max": 30.0,
+  "rrsig_expiradas": 6,
+  "hallazgos_error": 9,
+  "hallazgos_aviso": 14,
+  "zone_walking_posible": 7,
+  "zonas_nsec3_diccionario": 2
+ }
+}
